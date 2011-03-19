@@ -10,11 +10,6 @@ namespace TheGym
 	{
 		
 		
-		public ScheduleTableViewController( ) : base()
-		{
-			
-		}
-		
 		public override void ViewDidLoad()
 		{
 			

@@ -15,24 +15,24 @@ namespace TheGym
 		}
 	}
 
-	// The name AppDelegate is referenced in the MainWindow.xib file.
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		private NavigationController _navigationController;
+		private GymTabBarController tabBarController;
 		
-		// This method is invoked when the application has loaded its UI and its ready to run
+		
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
-			// If you have defined a view, add it here:
-			_navigationController = new NavigationController();
-			window.AddSubview (_navigationController.View);
+			
+			
+			
+			tabBarController = new GymTabBarController();
+			window.AddSubview ( tabBarController.View );
 			
 			window.MakeKeyAndVisible ();
 			
 			return true;
 		}
 
-		// This method is required in iPhoneOS 3.0
 		public override void OnActivated (UIApplication application)
 		{
 		}

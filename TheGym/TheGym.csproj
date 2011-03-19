@@ -69,8 +69,6 @@
       <DependentUpon>MainWindow.xib</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
-    <Compile Include="NavigationController.cs" />
-    <Compile Include="HomeViewController.cs" />
     <Compile Include="GymSettingsViewController.cs" />
     <Compile Include="GymSettingsDataSource.cs" />
     <Compile Include="GymClass.cs" />
@@ -78,6 +76,10 @@
     <Compile Include="ScheduleTableViewController.cs" />
     <Compile Include="ScheduleTableViewDataSource.cs" />
     <Compile Include="ScheduleTableViewDelegate.cs" />
+    <Compile Include="GymTabBarController.cs" />
+    <Compile Include="GymNavigationController.cs" />
+    <Compile Include="ScheduleViewController.cs" />
+    <Compile Include="GymState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xib" />

@@ -25,16 +25,46 @@ namespace TheGym
 			classDate = new UILabel();
 			gym = new UILabel();
 			
-			
-			
-		}
-		
-		public void setGymView()
-		{
 			classTitle.Text = _gymClass.title;
-			classTitle.Frame = new RectangleF(5,5,100,25);
-			AddSubview( classTitle );
+			instructor.Text = _gymClass.instructor;
+			classTime.Text= _gymClass.time;
+			gym.Text = _gymClass.gym;
 			
+			
+			float leftColumn = 5;
+			float upperMargin = 1;
+			float verticalSpace= 1;
+			float horisontalSpace = 5;
+			float leftLength = 200;
+			float heigth = 20;
+			
+			
+			
+			if ( GymState.PerViewType == GymState.PER_GYM ) {
+				
+				classTitle.Frame = new RectangleF( leftColumn, upperMargin, leftLength,heigth );
+				AddSubview( classTitle );
+				
+				instructor.Frame = new RectangleF(leftColumn, upperMargin+heigth+verticalSpace, leftLength,heigth );
+				AddSubview( instructor );
+				
+				
+				classTime.Frame = new RectangleF( leftColumn + horisontalSpace+ leftLength, upperMargin + heigth , leftLength , heigth );
+				AddSubview( classTime );
+			} else if ( GymState.PerViewType == GymState.PER_CLASS ) 
+			{
+				
+				gym.Frame = new RectangleF( leftColumn, upperMargin, leftLength,heigth );
+				AddSubview( gym  );
+				
+				instructor.Frame = new RectangleF(leftColumn, upperMargin+heigth+verticalSpace, leftLength,heigth );
+				AddSubview( instructor );
+				
+				
+				classTime.Frame = new RectangleF( leftColumn + horisontalSpace+ leftLength, upperMargin + heigth , leftLength , heigth );
+				AddSubview( classTime );
+
+			}
 			
 		}
 		

@@ -39,6 +39,29 @@ namespace TheGym
 			gc.date = "12.12.2011";
 			_gyms.Add ( gc );
 			
+			gc = new GymClass();
+			gc.title = "Spinning";
+			gc.time = "09.40";
+			gc.instructor = "Klara Ku";
+			gc.gym = "Rosten";
+			gc.date = "12.12.2011";
+			_gyms.Add ( gc );
+
+			gc = new GymClass();
+			gc.title = "Spinning";
+			gc.time = "09.40";
+			gc.instructor = "Klara Ku";
+			gc.gym = "Rosten";
+			gc.date = "12.12.2011";
+			_gyms.Add ( gc );
+
+			gc = new GymClass();
+			gc.title = "Spinning";
+			gc.time = "09.40";
+			gc.instructor = "Klara Ku";
+			gc.gym = "Rosten";
+			gc.date = "12.12.2011";
+			_gyms.Add ( gc );
 			
 			//this._gyms = session.getGymSchedule();
 		}
@@ -56,7 +79,6 @@ namespace TheGym
 			UITableViewCell cell =  new UITableViewCell ();
 			GymClassTableViewCell tableViewCell = new GymClassTableViewCell( _gyms[ indexPath.Row ] );
 			
-			tableViewCell.setGymView();
 			cell = tableViewCell;
 			
 			
