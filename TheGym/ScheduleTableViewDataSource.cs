@@ -17,14 +17,13 @@ namespace TheGym
 		}
 		
 		
-/*		public ScheduleTableViewDataSource (   )
+		public ScheduleTableViewDataSource (   )
 		{
-			TTTSchedule schedule = new TTTSchedule( );
-			this._gyms = schedule.GymSchedules;
-			//this._gyms = session.getGymSchedule();
+			this._gyms = TTTSource.getSchedules();
+			
 		}
 
-*/
+/*
 		
 		public ScheduleTableViewDataSource (   )
 		{
@@ -65,7 +64,7 @@ namespace TheGym
 			
 			//this._gyms = session.getGymSchedule();
 		}
-		
+	*/	
 		
 		//Overrided methods
 		public override int RowsInSection (UITableView tableView, int section )
@@ -76,13 +75,11 @@ namespace TheGym
 		
 		public override UITableViewCell GetCell ( UITableView tableView, NSIndexPath indexPath )
 		{
-			UITableViewCell cell =  new UITableViewCell ();
 			GymClassTableViewCell tableViewCell = new GymClassTableViewCell( _gyms[ indexPath.Row ] );
 			
-			cell = tableViewCell;
+			return tableViewCell;
 			
 			
-			return cell;
 		}
 	}
 }

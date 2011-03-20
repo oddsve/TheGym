@@ -6,9 +6,12 @@ namespace TheGym
 {
 	public class GymTabBarController : UITabBarController
 	{
+		GymTabBarControllerDelegate gymDelegate;
 		public GymTabBarController ()
 		{
 			
+			
+			gymDelegate = new GymTabBarControllerDelegate();
 			
 				
 		}
@@ -31,6 +34,7 @@ namespace TheGym
 			
 			
 			ViewControllers = tabs;
+			
 			
 			
 		}
