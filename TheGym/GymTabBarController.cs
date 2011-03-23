@@ -23,21 +23,23 @@ namespace TheGym
 			
 			var tabs = new UIViewController[2];
 			
-			tabs[0] = new GymNavigationController( GymState.PER_CLASS );
+			tabs[0] = new GymSettingsViewController();
+			tabs[0].TabBarItem = new UITabBarItem( "Konto", new UIImage() ,0);
 			
-			tabs[0].TabBarItem = new UITabBarItem( UITabBarSystemItem.Favorites, GymState.PER_CLASS );
+			tabs[1] = new ScheduleNavigationController();
+			tabs[1].TabBarItem = new UITabBarItem( "Timer", new UIImage() ,1);
 			
-			tabs[1] = new GymNavigationController( GymState.PER_GYM );
 			
-			tabs[1].TabBarItem = new UITabBarItem( "Senter", new UIImage(), GymState.PER_GYM );
-
+			
+	
 			
 			
 			ViewControllers = tabs;
 			
-			
+		
 			
 		}
+		
 		
 		
 	}

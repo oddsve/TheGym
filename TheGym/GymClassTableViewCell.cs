@@ -19,6 +19,7 @@ namespace TheGym
 		{
 			_gymClass = gymClass;
 			
+			
 			classTitle = new UILabel();
 			instructor = new UILabel(  );
 			classTime = new UILabel();
@@ -40,32 +41,41 @@ namespace TheGym
 			
 			
 			
-			if ( GymState.PerViewType == GymState.PER_GYM ) {
-				
-				classTitle.Frame = new RectangleF( leftColumn, upperMargin, leftLength,heigth );
-				AddSubview( classTitle );
-				
-				instructor.Frame = new RectangleF(leftColumn, upperMargin+heigth+verticalSpace, leftLength,heigth );
-				AddSubview( instructor );
-				
-				
-				classTime.Frame = new RectangleF( leftColumn + horisontalSpace+ leftLength, upperMargin + heigth , leftLength , heigth );
-				AddSubview( classTime );
-			} else if ( GymState.PerViewType == GymState.PER_CLASS ) 
-			{
-				
-				gym.Frame = new RectangleF( leftColumn, upperMargin, leftLength,heigth );
-				AddSubview( gym  );
-				
-				instructor.Frame = new RectangleF(leftColumn, upperMargin+heigth+verticalSpace, leftLength,heigth );
-				AddSubview( instructor );
-				
-				
-				classTime.Frame = new RectangleF( leftColumn + horisontalSpace+ leftLength, upperMargin + heigth , leftLength , heigth );
-				AddSubview( classTime );
-
-			}
 			
+				
+			classTitle.Frame = new RectangleF( 	leftColumn, 
+		                             		    upperMargin, 
+		                                  		leftLength,
+		                                  		heigth );
+			AddSubview( classTitle );
+			
+			gym.Frame = new RectangleF( 	leftColumn + horisontalSpace + leftLength, 
+		                            		upperMargin , 
+		                            		leftLength , 
+		                            		heigth );
+			AddSubview( gym  );
+
+			instructor.Frame = new RectangleF(	leftColumn, 
+		                                  		upperMargin+heigth+verticalSpace, 
+		                                  		leftLength,
+		                                  		heigth );
+			instructor.Font = UIFont.FromName("Arial",10);
+			AddSubview( instructor );
+			
+			
+			classTime.Frame = new RectangleF( 	leftColumn + horisontalSpace+ leftLength, 
+		                                 		upperMargin + heigth , 
+		                                 		leftLength , 
+		                                 		heigth );
+			classTime.Font = UIFont.FromName("Arial",10);
+			AddSubview( classTime );
+			
+			
+			
+			
+
+
+				
 		}
 		
 	}

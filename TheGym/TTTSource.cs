@@ -14,12 +14,7 @@ namespace TheGym
 			{
 				populateSchedules();
 			}
-			
-			if ( GymState.PerViewType == GymState.PER_CLASS )
-			{
-				schedules.Sort();
-			}
-			
+						
 			return schedules;
 			
 		}

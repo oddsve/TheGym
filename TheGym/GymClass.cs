@@ -1,7 +1,7 @@
 using System;
 namespace TheGym
 {
-	public class GymClass : IComparable
+	public class GymClass //: IComparable
 	{
 		public string title { get; set; }
 		public string instructor { get; set; }
@@ -18,7 +18,7 @@ namespace TheGym
 			
 		}
 		
-		public  int CompareTo (object obj)
+/*		public  int CompareTo (object obj)
 		{
 			GymClass otherGymClass = ( GymClass ) obj;
 			if ( GymState.PerViewType == GymState.PER_CLASS )
@@ -27,7 +27,7 @@ namespace TheGym
 				return gym.CompareTo( otherGymClass.gym );
 			else
 				return time.CompareTo( otherGymClass.time );
-		}
+		}*/
 		
 		
 	}

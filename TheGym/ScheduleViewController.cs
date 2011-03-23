@@ -9,11 +9,16 @@ namespace TheGym
 {
 	public class ScheduleViewController : UIViewController
 	{
-			
+		protected ScheduleNavigationController _navigationController;
+		
+		public ScheduleViewController( ScheduleNavigationController navigationController )
+		{
+			this._navigationController = navigationController;
+		}
 			
 		public override void ViewDidLoad ()
 		{
-			
+			/*
 			UIBarButtonItem settingsButton = new UIBarButtonItem();
 			settingsButton.Title = "Settings";
 			settingsButton.Clicked += delegate(object sender, EventArgs e) {
@@ -21,22 +26,11 @@ namespace TheGym
 				NavigationController.PushViewController(settingsController,true);
 			};
 			
-			NavigationItem.LeftBarButtonItem = settingsButton;
-
+			NavigationItem.LeftBarButtonItem = settingsButton;					
+			*/
 			
-			if ( GymState.PerViewType == GymState.PER_GYM ) 
-			{
-				Title = "Senter";
-				
-			} else {
-				Title = "Klasse";
-			}
-			
-			
-			
-			ScheduleTableViewController sheduleTableViewController = new ScheduleTableViewController();
-			
-			
+			ScheduleTableViewController sheduleTableViewController = new ScheduleTableViewController( this._navigationController );
+						
 			sheduleTableViewController.View.Frame = new RectangleF( 0,0,View.Frame.Width,View.Frame.Height );
 			View.Add ( sheduleTableViewController.View );
 			

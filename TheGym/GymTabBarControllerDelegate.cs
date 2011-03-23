@@ -11,13 +11,16 @@ namespace TheGym
 			
 		}
 		
-		public override void DidChangeValue ( string forKey )
-		                                     
-		                                  
+		public override void DidChangeValue ( string forKey )			                                  
 		{
 			base.DidChangeValue (forKey);
 			System.Console.WriteLine( "HHHH" + forKey );
+			
+			
+			
 		}
+		
+		
 		
 	}
 }

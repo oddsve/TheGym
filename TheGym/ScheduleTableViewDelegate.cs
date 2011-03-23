@@ -8,8 +8,8 @@ namespace TheGym
 {
 	public class ScheduleTableViewDelegate : UITableViewDelegate
 	{
-		protected UITableViewController _controller;
-		public ScheduleTableViewDelegate ( UITableViewController controller) :base()
+		protected ScheduleTableViewController _controller;
+		public ScheduleTableViewDelegate ( ScheduleTableViewController controller) :base()
 		{
 			this._controller = controller;
 		}
@@ -17,10 +17,21 @@ namespace TheGym
 		
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
-		//	tableView.DataSource.GetCell( tableView, indexPath ).Accessory = UITableViewCellAccessory.Checkmark ;
+			//tableView.DataSource.GetCell( tableView, indexPath ).Accessory = UITableViewCellAccessory.Checkmark ;
+			
+			BookingViewController booking = new BookingViewController();
+			
+			this._controller._navigationController.PushViewController( booking, true );
+			
+			
 						
 			
 		}
+		
+/*		public override float GetHeightForRow (UITableView tableView, NSIndexPath indexPath)
+		{
+			return 60;
+		}*/
 		
 		
 		

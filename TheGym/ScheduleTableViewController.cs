@@ -8,7 +8,12 @@ namespace TheGym
 {
 	public class ScheduleTableViewController : UITableViewController
 	{
+		public ScheduleNavigationController _navigationController;
 		
+		public ScheduleTableViewController( ScheduleNavigationController navigationController )
+		{
+			this._navigationController = navigationController;
+		}
 		
 		public override void ViewDidLoad()
 		{
