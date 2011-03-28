@@ -32,12 +32,12 @@ namespace TheGym
 			ScheduleTableViewController sheduleTableViewController = new ScheduleTableViewController( this._navigationController );
 						
 			sheduleTableViewController.View.Frame = new RectangleF( 0,0,View.Frame.Width,View.Frame.Height );
-			View.Add ( sheduleTableViewController.View );
+			View.AddSubview ( sheduleTableViewController.View );
 			
 			base.ViewDidLoad ();
 		}
 		
-		public override void ViewWillAppear (bool animated)
+	/*	public override void ViewWillAppear (bool animated)
 		{
 			// Re-show the toolbar here for consistency
 	//		NavigationController.SetToolbarHidden(false,true);
@@ -55,6 +55,6 @@ namespace TheGym
 			Console.WriteLine("Frame: {0}",View.Frame);
 			
 			return rect;
-		}
+		}*/
 	}
 }

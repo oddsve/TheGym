@@ -100,4 +100,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\greybutton.png" />
+  </ItemGroup>
 </Project>

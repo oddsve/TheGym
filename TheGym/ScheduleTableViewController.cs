@@ -8,7 +8,7 @@ namespace TheGym
 {
 	public class ScheduleTableViewController : UITableViewController
 	{
-		public ScheduleNavigationController _navigationController;
+		private ScheduleNavigationController _navigationController;
 		
 		public ScheduleTableViewController( ScheduleNavigationController navigationController )
 		{
@@ -19,7 +19,7 @@ namespace TheGym
 		{
 			
 			TableView.DataSource = new ScheduleTableViewDataSource();
-			TableView.Delegate = new ScheduleTableViewDelegate( this );
+			TableView.Delegate = new ScheduleTableViewDelegate( this , this._navigationController );
 			
 			//base.ViewDidLoad();
 		}

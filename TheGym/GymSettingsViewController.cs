@@ -18,7 +18,7 @@ namespace TheGym
 			
 			Title = "Settings";
 			
-			View.BackgroundColor = UIColor.White;
+			View.BackgroundColor = UIColor.Black ;
 			
 			int spacing = 10;
 			
@@ -34,6 +34,8 @@ namespace TheGym
 			
 			UILabel userNameLabel = new UILabel();
 			userNameLabel.Text = "Brukernavn:";
+			userNameLabel.BackgroundColor = UIColor.Black;
+			userNameLabel.TextColor = UIColor.White;
 			userNameLabel.Frame = new RectangleF(xPos,yPos,labelWidth,gridHight);
 			View.AddSubview( userNameLabel );
 			
@@ -41,6 +43,8 @@ namespace TheGym
 			
 			UILabel PasswordLabel = new UILabel();
 			PasswordLabel.Text = "Passord:";
+			PasswordLabel.BackgroundColor = UIColor.Black;
+			PasswordLabel.TextColor = UIColor.White;
 			PasswordLabel.Frame = new RectangleF(xPos,yPos,labelWidth,gridHight);
 			View.AddSubview( PasswordLabel );
 			
@@ -64,15 +68,29 @@ namespace TheGym
 			passwordField.Text = GymSettingsDataSource.Password;
 			View.Add( passwordField );
 			
+			yPos += spacing + gridHight;
+			
+			
+			UIButton saveButton = UIButton.FromType(UIButtonType.RoundedRect );
+			
+			saveButton.Frame = new RectangleF( spacing,yPos,fieldWidth+labelWidth+spacing ,gridHight);
+			saveButton.SetTitle("Lagre",UIControlState.Normal );
+			saveButton.BackgroundColor = UIColor.Clear;
+			saveButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
+			saveButton.TouchDown += delegate {
+				GymSettingsDataSource.UserName = userNameField.Text;
+				GymSettingsDataSource.Password = passwordField.Text;
+				GymSettingsDataSource.Write();
+				passwordField.ResignFirstResponder();
+					
+			};
+			
+			
+			View.AddSubview( saveButton );
+			
 		}
 		
 			
-		public override void ViewWillDisappear (bool animated)
-		{
-			GymSettingsDataSource.UserName = userNameField.Text;
-			GymSettingsDataSource.Password = passwordField.Text;
-			GymSettingsDataSource.Write();
-		}
 		
 
 	}

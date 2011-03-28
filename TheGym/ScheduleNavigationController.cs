@@ -7,12 +7,21 @@ namespace TheGym
 	public class ScheduleNavigationController : UINavigationController
 	{
 		
-		
-		public override void ViewDidAppear (bool animated)
+		public override void ViewDidLoad ()
 		{
-			base.ViewDidAppear (animated);
+				
 			ScheduleViewController viewController = new ScheduleViewController( this );
-			this.View.AddSubview( viewController.View );
+			this.PushViewController( viewController , true );
+		//	this.View.AddSubview( viewController.View );
+			
+			NavigationBarHidden = false;
+			
+		}
+		
+		public override void PushViewController ( UIViewController viewController, bool animated )
+		{
+			System.Console.WriteLine( "Antall:" + this.ViewControllers.Length );
+			base.PushViewController ( viewController, animated );
 			
 		}
 	}
