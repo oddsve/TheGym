@@ -26,7 +26,8 @@ namespace TheGym
 			
 			
 			
-			BookingViewController booking = new BookingViewController( dataSource.Gyms[ indexPath.Row ].title, false );			
+			BookingViewController booking = new BookingViewController( dataSource.Gyms[ indexPath.Row ].title,
+			                                                          dataSource.Gyms[ indexPath.Row ].status );			
 			_navigator.PushViewController( booking, true );
 			
 			

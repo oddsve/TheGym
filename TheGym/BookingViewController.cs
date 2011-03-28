@@ -9,26 +9,37 @@ namespace TheGym
 	{
 		UIButton bookButton;
 		Boolean _booked;
+		Boolean _fullt;
 		
 		
-		public BookingViewController ( String title , Boolean booked) 
+		public BookingViewController ( string title , string status) 
 		{
+			System.Console.WriteLine( status );
 			Title = title;
-			_booked = booked;
-
-			
+			_booked = status == "Booket";
+			_fullt = status == "Fullt";
 			
 		}
 		
 		private void setButton() 
 		{
+			
 			if ( _booked ) 
 			{
 				bookButton.SetTitle("Avbestill",UIControlState.Normal );
+				bookButton.Enabled = true;
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/redbutton.png" ), UIControlState.Normal );
-			} else 
+			}
+			else if ( _fullt ) 
+			{
+				bookButton.SetTitle("Fullt",UIControlState.Normal );
+				bookButton.Enabled = false;	
+				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
+			} 
+			else 
 			{
 				bookButton.SetTitle("Bestill",UIControlState.Normal );
+				bookButton.Enabled = true;	
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greenbutton.png" ), UIControlState.Normal );				
 			}
 		}
