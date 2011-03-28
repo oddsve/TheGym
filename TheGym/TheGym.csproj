@@ -87,6 +87,7 @@
     <Compile Include="GymTabBarControllerDelegate.cs" />
     <Compile Include="BookingViewController.cs" />
     <Compile Include="ScheduleNavigationController.cs" />
+    <Compile Include="ScheduleSearchBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xib" />
