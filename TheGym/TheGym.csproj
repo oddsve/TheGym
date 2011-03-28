@@ -102,5 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\greybutton.png" />
+    <Content Include="images\greenbutton.png" />
+    <Content Include="images\redbutton.png" />
   </ItemGroup>
 </Project>
