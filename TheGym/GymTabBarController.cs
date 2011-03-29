@@ -24,7 +24,7 @@ namespace TheGym
 			var tabs = new UIViewController[8];
 			
 			tabs[7] = new GymSettingsViewController();
-			tabs[7].TabBarItem = new UITabBarItem( "Konto", new UIImage() ,0);
+			tabs[7].TabBarItem = new UITabBarItem( "Settings", new UIImage() ,0);
 			
 			
 			DateTime toDay = DateTime.Now;
