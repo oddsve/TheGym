@@ -10,6 +10,7 @@ namespace TheGym
 	{
 		protected List<GymClass> _gyms;
 		
+		
 		public List<GymClass> Gyms
 		{
 			get { return this._gyms; }
@@ -17,9 +18,10 @@ namespace TheGym
 		}
 		
 		
-		public ScheduleTableViewDataSource (   )
+		
+		public ScheduleTableViewDataSource ( DateTime scheduleDate  )
 		{
-			this._gyms = TTTSource.getSchedules();
+			this._gyms = TTTSource.getSchedules( scheduleDate );
 			
 		}
 

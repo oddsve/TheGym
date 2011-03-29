@@ -6,16 +6,24 @@ namespace TheGym
 {
 	public static class TTTSource 
 	{
-		private static  List<GymClass> schedules;
 		
-		public static List<GymClass> getSchedules()
+		
+		private static Dictionary< string, List<GymClass> > schedules;
+		
+		public static List<GymClass> getSchedules( DateTime scheduleDate )
 		{
-			if ( schedules == null ) 
+			string scheduleDateString = scheduleDate.Year.ToString() + "-" 
+										+ scheduleDate.Month.ToString() + "-" 
+										+ scheduleDate.Day.ToString();
+			if ( schedules == null ) schedules = new Dictionary<string, List<GymClass>>();
+			
+			
+			if ( !schedules.ContainsKey( scheduleDateString )  ) 
 			{
-				populateSchedules();
+				populateSchedules( scheduleDateString );
 			}
 						
-			return schedules;
+			return schedules[ scheduleDateString ];
 			
 		}
 
@@ -25,12 +33,12 @@ namespace TheGym
 				                        
 		
 		
-		private static void populateSchedules()
+		private static void populateSchedules( string scheduleDateString )
 		{
 			
-			schedules = new List<GymClass>();
+			schedules[ scheduleDateString ] = new List<GymClass>();
 
-			HtmlDocument document = TTTHttp.GroupActivities();
+			HtmlDocument document = TTTHttp.GroupActivities( scheduleDateString );
 			
 			HtmlDocument rowDocument= new HtmlDocument();
 									
@@ -93,7 +101,7 @@ namespace TheGym
 								gymClass.action = link.GetAttributeValue("href","");
 							}
 							
-							schedules.Add( gymClass );				
+							schedules[ scheduleDateString ].Add( gymClass );				
 						}
 					}
 				}				 

@@ -10,25 +10,28 @@ namespace TheGym
 	public class ScheduleViewController : UIViewController
 	{
 		protected ScheduleNavigationController _navigationController;
+		DateTime _scheduleDate;
 		
-		public ScheduleViewController( ScheduleNavigationController navigationController )
+		public ScheduleViewController( ScheduleNavigationController navigationController , DateTime scheduleDate )
 		{
 			this._navigationController = navigationController;
+			_scheduleDate = scheduleDate;
 		}
 			
 		public override void ViewDidLoad ()
 		{
 			
-			Title = "Gruppetimer";
+			Title = _scheduleDate.DayOfWeek.ToString();
 			
 			
-			ScheduleSearchBar searchBar = new ScheduleSearchBar();
+			/*ScheduleSearchBar searchBar = new ScheduleSearchBar();
 			searchBar.Frame = new RectangleF ( 0, 0, View.Frame.Width, 40 ) ;			
-			View.AddSubview( searchBar );
+			View.AddSubview( searchBar );*/
 	
-			ScheduleTableViewController sheduleTableViewController = new ScheduleTableViewController( this._navigationController );
+			ScheduleTableViewController sheduleTableViewController = 
+				new ScheduleTableViewController( this._navigationController, _scheduleDate );
 			
-			sheduleTableViewController.View.Frame = new RectangleF( 0, searchBar.Frame.Height, View.Frame.Width, View.Frame.Height );
+			sheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height );
 			View.AddSubview ( sheduleTableViewController.View );
 			
 			base.ViewDidLoad ();

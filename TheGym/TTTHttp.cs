@@ -93,7 +93,7 @@ namespace TheGym
 			
 		}*/
 		
-		public static HtmlDocument GroupActivities() 
+		public static HtmlDocument GroupActivities( string scheduleDateString ) 
 		{
 			string unitURL =  "http://brp.netono.se/3t/mesh/showGroupActivities.action?businessUnit=1";
 			
@@ -112,7 +112,9 @@ namespace TheGym
 			                         "selectableUnits%5B4%5D.chosen=true&selectableUnits%5B5%5D.chosen=true&"+
 			                         "selectableUnits%5B6%5D.chosen=true&selectableUnits%5B7%5D.chosen=true&"+
 			                         "selectableUnits%5B8%5D.chosen=true&selectableUnits%5B9%5D.chosen=true&"+
-			                         "selectableUnits%5B10%5D.chosen=true&group=all&date=2011-03-29&group=all" );
+			                         "selectableUnits%5B10%5D.chosen=true&group=all&date="+ scheduleDateString +
+			                         "&group=all&");
+		
 
 			StreamWriter requestWriter = new StreamWriter( webRequest.GetRequestStream() );
 			requestWriter.Write( postData );
