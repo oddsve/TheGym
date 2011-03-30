@@ -7,7 +7,6 @@ namespace TheGym
 {
 	public class GymSettingsViewController : UIViewController
 	{
-	//	UINavigationController _navigationController;
 		UITextField userNameField;
 		UITextField passwordField;
 		

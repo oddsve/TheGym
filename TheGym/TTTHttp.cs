@@ -12,86 +12,87 @@ namespace TheGym
 	public static class TTTHttp
 	{
 
+		static CookieContainer cookies;
+
 		
 		
-	/*	public static HttpWebResponse HttpPost(string url, string referer, string userAgent
-		                                       , string postData, WebHeaderCollection headers)
-	    {
-            HttpWebRequest http = ( HttpWebRequest)WebRequest.Create(url) as HttpWebRequest;
-            http.AllowAutoRedirect = true;
-            http.Method = "POST";
-            http.ContentType = "application/x-www-form-urlencoded";
-            http.UserAgent = userAgent;
-            http.CookieContainer = new CookieContainer();
-            http.CookieContainer.Add(cookies);
-            http.Referer = referer;
-            byte[] dataBytes = UTF8Encoding.UTF8.GetBytes(postData);
-            http.ContentLength = dataBytes.Length;
-            using (Stream postStream = http.GetRequestStream())
-            {
-                postStream.Write(dataBytes, 0, dataBytes.Length);
-            }
-            HttpWebResponse httpResponse = ( HttpWebResponse ) http.GetResponse() as HttpWebResponse;
-            headers = http.Headers;
-            cookies.Add( httpResponse.Cookies );
-	
-	    }*/
-	
-		
-	/*	public static void createSession ()
+		public static void LogOn()
 		{
-			
-			
-			String logInURL = "http://brp.netono.se/3t/mesh/index.action";
-			String actionURL = "http://brp.netono.se/3t/mesh/login.action";
-			
-			
-   			// extract the viewstate value and build out POST data
-   			//string viewState = ExtractViewState(responseData);       
-   			string postData = String.Format( "username={0}&password={1}&isSaving=G%E5+videre"
-			                                , "rebekka@sveas.org" ,"200876" );
-  
-  
-			// now post to the login form
-			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( actionURL ) ;
-			webRequest.AllowAutoRedirect = true;
-			webRequest.Method = "POST";
-			webRequest.ContentType = "application/x-www-form-urlencoded";
 			cookies = new CookieContainer();
-			webRequest.CookieContainer = cookies;        
-		   
-			// write the form values into the request message
-			StreamWriter requestWriter = new StreamWriter( webRequest.GetRequestStream() );
-			requestWriter.Write( postData );
-   			requestWriter.Close();
-   
-			HttpWebResponse webResponse = ( HttpWebResponse ) webRequest.GetResponse();
+			ServicePointManager.Expect100Continue = false;
+
+
+			HttpWebRequest initailRequest = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/index.action?businessUnit=10");
+
+			initailRequest.ContentType = "application/x-www-form-urlencoded";
+			initailRequest.Method = "GET";
+
+			initailRequest.CookieContainer = cookies;
+			initailRequest.KeepAlive = true;
+
+
+
+			HttpWebResponse initialResponse = (HttpWebResponse)initailRequest.GetResponse();
+			CookieCollection initialCookieCollection = cookies.GetCookies(new Uri("http://brp.netono.se/3t/mesh/index.action"));
+
+			foreach (Cookie cookie in initialCookieCollection)
+			{
+				cookie.Path = "/";
+				cookies.Add(cookie);
+			}
+
+
+			HttpWebRequest loginRequest = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/login.action");
+
+			string loginString = "username=rebekka%40sveas.org&password=200876&isSaving=G%E5+videre";
+			byte[] data = Encoding.Default.GetBytes( loginString );
+			loginRequest.ContentLength = data.Length;
+
+			loginRequest.Method = "POST";
+
+
+			loginRequest.CookieContainer = cookies;
+			loginRequest.KeepAlive = true;
+			loginRequest.ContentType = "application/x-www-form-urlencoded";
+			//loginRequest.UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
+
 			
-			cookies.Add( webResponse.Cookies );
-			webResponse.Close();
+			Stream loginStream;
+			loginStream = loginRequest.GetRequestStream();
+			loginStream.Write(data, 0, data.Length);
+
+			loginStream.Close();
+
 			
-	/*		responseReader = new StreamReader( webRequest.GetResponse().GetResponseStream() , Encoding.UTF7);
+			HttpWebResponse loginResponse = (HttpWebResponse)loginRequest.GetResponse();
+			initialCookieCollection = cookies.GetCookies(new Uri("http://brp.netono.se/3t/mesh/login.action"));
+
+			foreach (Cookie cookie in initialCookieCollection)
+			{
+				cookie.Path = "/";
+				cookies.Add(cookie);
+			}
+
+			StreamReader reader = new StreamReader( loginResponse.GetResponseStream());
+			reader.ReadToEnd();
 			
-			// and read the response
-			responseData = responseReader.ReadToEnd();
-			cookies = webRequest.CookieContainer;
-			responseReader.Close();
+			//System.Console.WriteLine( reader.ReadToEnd() );
 			
-			webRequest.GetResponse().Close();
-			
-			System.Console.WriteLine ( "====" );
-			CookieCollection coco = cookies.GetCookies( new Uri( logInURL ) );
-			foreach  ( Cookie c in coco ) 
-			{					
-				System.Console.WriteLine( c.Name );
-				System.Console.WriteLine( c.Value );
-			}			
+
+			HttpWebRequest wr2 = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/showBookings.action");
+			wr2.CookieContainer = cookies;
+			wr2.KeepAlive = true;
+			wr2.ContentType = "application/x-www-form-urlencoded";
 			
 			
+			HttpWebResponse wresponse2 = (HttpWebResponse)wr2.GetResponse();
+			StreamReader reader2 = new StreamReader(wresponse2.GetResponseStream());
+			//reader2.ReadToEnd();
+			System.Console.WriteLine( reader2.ReadToEnd() );
 			
-			//System.Console.WriteLine( responseData );
-			
-		}*/
+
+		}	
+		
 		
 		public static HtmlDocument GroupActivities( string scheduleDateString ) 
 		{
@@ -101,8 +102,9 @@ namespace TheGym
 			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( unitURL );
 			webRequest.Method = "POST";
 			webRequest.ContentType = "application/x-www-form-urlencoded";
+			webRequest.CookieContainer = cookies;
+			
 
-			System.Console.WriteLine ( "====" );
 			
 			
 		

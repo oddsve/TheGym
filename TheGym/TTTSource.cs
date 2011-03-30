@@ -10,6 +10,9 @@ namespace TheGym
 		
 		private static Dictionary< string, List<GymClass> > schedules;
 		
+
+		
+		
 		public static List<GymClass> getSchedules( DateTime scheduleDate )
 		{
 			string scheduleDateString = scheduleDate.Year.ToString() + "-" 
@@ -68,7 +71,8 @@ namespace TheGym
 						    
 							
 						if ( row.GetAttributeValue( "class","" ).ToString() == "row"  || 
-						     row.GetAttributeValue( "class","" ).ToString() == "row alternateRow" ) 
+						     row.GetAttributeValue( "class","" ).ToString() == "row alternateRow" ||
+						     row.GetAttributeValue( "class","" ).ToString() == "row bookedRow") 
 						{
 							GymClass gymClass = new GymClass();
 							rowDocument.LoadHtml(  row.OuterHtml  );
