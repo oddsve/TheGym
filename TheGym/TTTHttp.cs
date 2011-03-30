@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using HtmlAgilityPack;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -94,7 +93,7 @@ namespace TheGym
 		}	
 		
 		
-		public static HtmlDocument GroupActivities( string scheduleDateString ) 
+		public static string GroupActivities( string scheduleDateString ) 
 		{
 			string unitURL =  "http://brp.netono.se/3t/mesh/showGroupActivities.action?businessUnit=1";
 			
@@ -128,11 +127,8 @@ namespace TheGym
 			string responseData = responseReader.ReadToEnd();
 			responseReader.Close();
 			
-			HtmlDocument document = new HtmlDocument();
-			HtmlNode.ElementsFlags.Remove( "option" );
-			document.LoadHtml( responseData );
 			
-			return document;
+			return responseData;
 				
 		}
 		

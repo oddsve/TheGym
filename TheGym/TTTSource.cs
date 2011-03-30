@@ -41,7 +41,12 @@ namespace TheGym
 			
 			schedules[ scheduleDateString ] = new List<GymClass>();
 
-			HtmlDocument document = TTTHttp.GroupActivities( scheduleDateString );
+			
+
+			HtmlDocument document = new HtmlDocument();
+			HtmlNode.ElementsFlags.Remove( "option" );
+			document.LoadHtml( TTTHttp.GroupActivities( scheduleDateString ) );
+		
 			
 			HtmlDocument rowDocument= new HtmlDocument();
 									
