@@ -77,7 +77,7 @@ namespace TheGym
 			
 			//System.Console.WriteLine( reader.ReadToEnd() );
 			
-
+			/*
 			HttpWebRequest wr2 = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/showBookings.action");
 			wr2.CookieContainer = cookies;
 			wr2.KeepAlive = true;
@@ -88,7 +88,7 @@ namespace TheGym
 			StreamReader reader2 = new StreamReader(wresponse2.GetResponseStream());
 			//reader2.ReadToEnd();
 			System.Console.WriteLine( reader2.ReadToEnd() );
-			
+			*/
 
 		}	
 		
@@ -121,7 +121,7 @@ namespace TheGym
 			requestWriter.Write( postData );
 			requestWriter.Close();
 			
-			StreamReader responseReader = new StreamReader( webRequest.GetResponse().GetResponseStream() , Encoding.UTF7);
+			StreamReader responseReader = new StreamReader( webRequest.GetResponse().GetResponseStream() , Encoding.UTF7 );
    
 			// and read the response
 			string responseData = responseReader.ReadToEnd();
@@ -130,6 +130,25 @@ namespace TheGym
 			
 			return responseData;
 				
+		}
+		
+		public static string getHTTP ( string url )
+		{
+			
+			// now we can send out cookie along with a request for the protected page
+			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( url );
+			webRequest.ContentType = "application/x-www-form-urlencoded";
+			webRequest.CookieContainer = cookies;
+		
+   			StreamReader responseReader = new StreamReader( webRequest.GetResponse().GetResponseStream() , Encoding.UTF7 );
+   
+			// and read the response
+			string responseData = responseReader.ReadToEnd();
+			responseReader.Close();
+			
+			
+			return responseData;
+			
 		}
 		
 /*		public static void sendAction ( string gymAction )

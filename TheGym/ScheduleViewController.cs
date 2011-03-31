@@ -11,11 +11,13 @@ namespace TheGym
 	{
 		protected ScheduleNavigationController _navigationController;
 		DateTime _scheduleDate;
+		bool _myBookings;
 		
-		public ScheduleViewController( ScheduleNavigationController navigationController , DateTime scheduleDate )
+		public ScheduleViewController( ScheduleNavigationController navigationController , DateTime scheduleDate, bool myBookings )
 		{
 			this._navigationController = navigationController;
 			_scheduleDate = scheduleDate;
+			_myBookings = myBookings;
 		}
 			
 		public override void ViewDidLoad ()
@@ -29,7 +31,7 @@ namespace TheGym
 			View.AddSubview( searchBar );*/
 	
 			ScheduleTableViewController sheduleTableViewController = 
-				new ScheduleTableViewController( this._navigationController, _scheduleDate );
+				new ScheduleTableViewController( this._navigationController, _scheduleDate , _myBookings );
 			
 			sheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height );
 			View.AddSubview ( sheduleTableViewController.View );

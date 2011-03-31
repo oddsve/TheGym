@@ -82,12 +82,13 @@
     <Compile Include="ScheduleTableViewDelegate.cs" />
     <Compile Include="GymTabBarController.cs" />
     <Compile Include="ScheduleViewController.cs" />
-    <Compile Include="TTTSource.cs" />
     <Compile Include="TTTHttp.cs" />
     <Compile Include="GymTabBarControllerDelegate.cs" />
     <Compile Include="BookingViewController.cs" />
     <Compile Include="ScheduleNavigationController.cs" />
     <Compile Include="ScheduleSearchBar.cs" />
+    <Compile Include="TTTSchedules.cs" />
+    <Compile Include="TTTBookings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xib" />

@@ -40,6 +40,8 @@ namespace TheGym
 			
 			if ( _gymClass.status == "Fullt" ) 
 				vacant.Text = "Fullt";
+			else if ( vacant == null )
+				vacant.Text ="";
 			else 
 				vacant.Text = _gymClass.vacant + " ledig" ;
 			

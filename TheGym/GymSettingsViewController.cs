@@ -24,7 +24,7 @@ namespace TheGym
 			int gridHight = 25;
 			int labelWidth = 100;
 			
-			int fieldWidth = 320 - spacing*3 - labelWidth;
+			int fieldWidth = 320 - spacing * 3 - labelWidth;
 			
 			int xPos = spacing;
 			int yPos = spacing;

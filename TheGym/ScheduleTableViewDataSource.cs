@@ -19,9 +19,10 @@ namespace TheGym
 		
 		
 		
-		public ScheduleTableViewDataSource ( DateTime scheduleDate  )
+		public ScheduleTableViewDataSource ( DateTime scheduleDate, bool myBookings  )
 		{
-			this._gyms = TTTSource.getSchedules( scheduleDate );
+			if ( myBookings ) this._gyms = TTTBookings.getMyBookings();
+			else this._gyms = TTTSchedules.getSchedules( scheduleDate );
 			
 		}
 
