@@ -19,6 +19,13 @@ namespace TheGym
 			_scheduleDate = scheduleDate;
 			_myBookings = myBookings;
 		}
+		
+		public ScheduleViewController( DateTime scheduleDate, bool myBookings )
+		{
+			_scheduleDate = scheduleDate;
+			_myBookings = myBookings;
+			
+		}
 			
 		public override void ViewDidLoad ()
 		{

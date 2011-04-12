@@ -43,18 +43,19 @@ namespace TheGym
 			tabs[3].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,4);
 			
 			toDay = toDay.AddDays(1);
-			tabs[4] = new ScheduleNavigationController( toDay , false );
+			tabs[4] = new ScheduleViewController(	new ScheduleNavigationController(toDay,false),toDay,false);
 			tabs[4].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,5);
 			
 			toDay = toDay.AddDays(1);
-			tabs[5] = new ScheduleNavigationController( toDay , false );
+			tabs[5] = new ScheduleViewController(	new ScheduleNavigationController(toDay,false),toDay,false);
 			tabs[5].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,6);
 
 			toDay = toDay.AddDays(1);
-			tabs[6] = new ScheduleNavigationController( toDay  , false );
+			tabs[6] = new ScheduleViewController(	new ScheduleNavigationController(toDay,false),toDay,false);
 			tabs[6].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,7);
-
-			tabs[7] = new ScheduleNavigationController( toDay   , true );
+			
+			
+			tabs[7] = new ScheduleViewController(	new ScheduleNavigationController(toDay,true),toDay,true);		
 			tabs[7].TabBarItem = new UITabBarItem( "Mine bookinger", new UIImage() ,8);
 
 			tabs[8] = new GymSettingsViewController();

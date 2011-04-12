@@ -25,12 +25,12 @@ namespace TheGym
 			
 		}
 		
-		public override void PushViewController ( UIViewController viewController, bool animated )
+/*		public override void PushViewController ( UIViewController viewController, bool animated )
 		{
 			System.Console.WriteLine( "Antall:" + this.ViewControllers.Length );
 			base.PushViewController ( viewController, animated );
 			
-		}
+		}*/
 	}
 }
 
