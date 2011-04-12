@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 using MonoTouch.Foundation;
 //using MonoTouch.UIKit;
@@ -9,7 +10,12 @@ namespace TheGym
 	{
 		public static string UserName { get; set; }
 		public static string Password { get ; set; }
+		public static Dictionary<int,string> gyms { get; set; }
 		
+		public GymSettingsDataSource()
+		{
+			gyms = TTTGyms.getGyms();
+		}
 		
 		public static void Read ()
 		{

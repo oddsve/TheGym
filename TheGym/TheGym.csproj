@@ -89,6 +89,7 @@
     <Compile Include="ScheduleSearchBar.cs" />
     <Compile Include="TTTSchedules.cs" />
     <Compile Include="TTTBookings.cs" />
+    <Compile Include="TTTGyms.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xib" />

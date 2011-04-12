@@ -9,7 +9,13 @@ namespace TheGym
 	{
 		UITextField userNameField;
 		UITextField passwordField;
+		private GymSettingsDataSource gymSettingsDataSource;
 		
+		public GymSettingsViewController()
+		{
+			gymSettingsDataSource = new GymSettingsDataSource();
+			
+		}
 		
 		public override void ViewDidLoad()
 		{
