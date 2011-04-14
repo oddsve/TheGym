@@ -9,12 +9,11 @@ namespace TheGym
 	{
 		UITextField userNameField;
 		UITextField passwordField;
-		private GymSettingsDataSource gymSettingsDataSource;
+		GymsTableViewController gymsTableViewController;
 		
 		public GymSettingsViewController()
 		{
-			gymSettingsDataSource = new GymSettingsDataSource();
-			
+			GymSettingsDataSource.Read();
 		}
 		
 		public override void ViewDidLoad()
@@ -32,8 +31,8 @@ namespace TheGym
 			
 			int fieldWidth = 320 - spacing * 3 - labelWidth;
 			
-			int xPos = spacing;
-			int yPos = spacing;
+			float xPos = spacing;
+			float yPos = spacing;
 			
 			
 			
@@ -93,9 +92,19 @@ namespace TheGym
 			
 			View.AddSubview( saveButton );
 			
+			yPos += spacing + saveButton.Frame.Height;
+			
+			gymsTableViewController = new GymsTableViewController();
+			gymsTableViewController.View.Frame = new RectangleF(0,yPos, View.Frame.Width,View.Frame.Height);
+			View.AddSubview( gymsTableViewController.View );
+			
 		}
 		
-			
+		public override void ViewDidDisappear (bool animated)
+		{
+			GymSettingsDataSource.Write();
+			base.ViewDidDisappear (animated);
+		}			
 		
 
 	}

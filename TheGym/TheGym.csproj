@@ -67,6 +67,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\iPhoneSimulator\Debug\HtmlAgilityPack.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindow.xib.designer.cs">
@@ -90,6 +91,9 @@
     <Compile Include="TTTSchedules.cs" />
     <Compile Include="TTTBookings.cs" />
     <Compile Include="TTTGyms.cs" />
+    <Compile Include="GymsTableViewController.cs" />
+    <Compile Include="GymsTableViewDelegate.cs" />
+    <Compile Include="GymsTableViewDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xib" />

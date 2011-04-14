@@ -53,8 +53,6 @@ namespace TheGym
 			loginRequest.CookieContainer = cookies;
 			loginRequest.KeepAlive = true;
 			loginRequest.ContentType = "application/x-www-form-urlencoded";
-			//loginRequest.UserAgent = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
-
 			
 			Stream loginStream;
 			loginStream = loginRequest.GetRequestStream();
@@ -75,28 +73,12 @@ namespace TheGym
 			StreamReader reader = new StreamReader( loginResponse.GetResponseStream());
 			reader.ReadToEnd();
 			
-			//System.Console.WriteLine( reader.ReadToEnd() );
-			
-			/*
-			HttpWebRequest wr2 = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/showBookings.action");
-			wr2.CookieContainer = cookies;
-			wr2.KeepAlive = true;
-			wr2.ContentType = "application/x-www-form-urlencoded";
-			
-			
-			HttpWebResponse wresponse2 = (HttpWebResponse)wr2.GetResponse();
-			StreamReader reader2 = new StreamReader(wresponse2.GetResponseStream());
-			//reader2.ReadToEnd();
-			System.Console.WriteLine( reader2.ReadToEnd() );
-			*/
 
 		}	
 		
 		
 		public static string PostHTTP( string url, string postData)//string scheduleDateString ) 
-		{
-			
-			
+		{		
 			// now we can send out cookie along with a request for the protected page
 			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( url );
 			webRequest.Method = "POST";
@@ -112,16 +94,13 @@ namespace TheGym
    
 			// and read the response
 			string responseData = responseReader.ReadToEnd();
-			responseReader.Close();
+			responseReader.Close();		
 			
-			
-			return responseData;
-				
+			return responseData;				
 		}
 		
 		public static string getHTTP ( string url )
 		{
-			
 			// now we can send out cookie along with a request for the protected page
 			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( url );
 			webRequest.ContentType = "application/x-www-form-urlencoded";
@@ -131,11 +110,11 @@ namespace TheGym
    
 			// and read the response
 			string responseData = responseReader.ReadToEnd();
+			
+			//responseData =Encoding.Convert( Encoding.UTF7, Encoding.UTF8, responseData );
 			responseReader.Close();
 			
-			
 			return responseData;
-			
 		}
 		
 /*		public static void sendAction ( string gymAction )

@@ -33,14 +33,28 @@ namespace TheGym
 			
 			schedules[ scheduleDateString ] = new List<GymClass>();
 			
- 			string postData = String.Format(  
-                         "selectableUnits%5B0%5D.chosen=true&selectableUnits%5B1%5D.chosen=true&"+
+ 			string postData = "";
+			
+			for ( int i = 0 ; i < GymSettingsDataSource.selectedGymKeys.Count ; i ++ )
+			{
+				postData += "&selectableUnits%5B" 
+			                	+ GymSettingsDataSource.selectedGymKeys[i] 
+			                	+ "%5D.chosen=true" ;
+			}
+			
+			postData += "&group=all&date="+ scheduleDateString +" &group=all&";
+			postData = postData.Substring(1);	
+				
+				
+		/*		= String.Format(  
+		               "selectableUnits%5B0%5D.chosen=true&selectableUnits%5B1%5D.chosen=true&"+
                          "selectableUnits%5B2%5D.chosen=true&selectableUnits%5B3%5D.chosen=true&"+
                          "selectableUnits%5B4%5D.chosen=true&selectableUnits%5B5%5D.chosen=true&"+
                          "selectableUnits%5B6%5D.chosen=true&selectableUnits%5B7%5D.chosen=true&"+
                          "selectableUnits%5B8%5D.chosen=true&selectableUnits%5B9%5D.chosen=true&"+
                          "selectableUnits%5B10%5D.chosen=true&group=all&date="+ scheduleDateString +
                          "&group=all&");
+                         */
 
 			string activityUrl = "http://brp.netono.se/3t/mesh/showGroupActivities.action?businessUnit=1";
 
