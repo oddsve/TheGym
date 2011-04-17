@@ -9,11 +9,14 @@ namespace TheGym
 	{
 		UIButton bookButton;
 		GymClass gymClass;		
+		UITableView tableView;
 		
-		public BookingViewController ( GymClass gymClass ) 
+		public BookingViewController ( GymClass gymClass, UITableView tableView ) 
 		{
 			Title = gymClass.title;
-			this. gymClass = gymClass;			
+			this. gymClass = gymClass;	
+			this.tableView = tableView;
+			
 		}
 		
 		private void setButton() 
@@ -52,6 +55,7 @@ namespace TheGym
 					
 				gymClass.book();
 				setButton();
+				tableView.ReloadData();
 					
 			};
 

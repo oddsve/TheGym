@@ -13,7 +13,9 @@ namespace TheGym
 		
 		public static void unBook ( string gymAction )
 		{
-			System.Console.WriteLine("TODO: IMPLEMENT");
+			string actionURL =  "http://brp.netono.se/3t/mesh/" + gymAction ;
+			string dummy = TTTHttp.getHTTP( actionURL );
+			
 		}
 	}
 }

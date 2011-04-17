@@ -11,14 +11,8 @@ namespace TheGym
 	{
 		DateTime _scheduleDate;
 		bool _myBookings;
+		ScheduleTableViewController scheduleTableViewController;
 		
-	/*	public ScheduleViewController( UINavigationController navigationController , DateTime scheduleDate, bool myBookings )
-		{
-			//this._navigationController = navigationController;
-			_scheduleDate = scheduleDate;
-			_myBookings = myBookings;
-			
-		}*/
 		
 		public ScheduleViewController( DateTime scheduleDate, bool myBookings )
 		{
@@ -34,13 +28,21 @@ namespace TheGym
 			
 			
 	
-			ScheduleTableViewController sheduleTableViewController = 
+			scheduleTableViewController = 
 				new ScheduleTableViewController( this.NavigationController, _scheduleDate , _myBookings );
 			
-			sheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height );
-			View.AddSubview ( sheduleTableViewController.View );
+			scheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height );
+			View.AddSubview ( scheduleTableViewController.View );
 			
 			base.ViewDidLoad ();
+		}
+		
+		public override void ViewWillAppear (bool animated)
+		{
+			ScheduleTableViewDataSource dataSource = (ScheduleTableViewDataSource) scheduleTableViewController.TableView.DataSource;
+			dataSource.ReloadData();
+			scheduleTableViewController.TableView.ReloadData();
+			base.ViewWillAppear (animated);
 		}
 		
 	}

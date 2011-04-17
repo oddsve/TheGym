@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using HtmlAgilityPack;
+using System.Text.RegularExpressions;
 
 namespace TheGym
 {
@@ -61,7 +62,22 @@ namespace TheGym
 														
 							cell = cells[4];
 							link = cell.SelectNodes( "//a" )[0];
-							gymClass.action = link.GetAttributeValue( "href" , "" );
+							
+							string href = link.GetAttributeValue( "href" , "" );
+							
+							string pattern = "bookingId=(.*?)'";
+							// Instantiate the regular expression object.
+							Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
+							
+							// Match the regular expression pattern against a text string.
+							Match m = r.Match(href);
+							while (m.Success) 
+							{
+								
+								gymClass.action = "debook.action?bookingId=" + m.Groups[1].ToString() ;
+							 	m = m.NextMatch();
+								
+							}
 							
 							gymClass.status = "Booket";
 							

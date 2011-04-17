@@ -10,6 +10,9 @@ namespace TheGym
 	{
 		protected List<GymClass> _gyms;
 		
+		private DateTime scheduleDate;
+		private bool myBookings;
+		
 		
 		public List<GymClass> Gyms
 		{
@@ -19,13 +22,21 @@ namespace TheGym
 		
 		
 		
+		
 		public ScheduleTableViewDataSource ( DateTime scheduleDate, bool myBookings  )
+		{
+			this.myBookings = myBookings;
+			this.scheduleDate = scheduleDate;
+					
+		}
+		 
+		
+		public void ReloadData ()
 		{
 			if ( myBookings ) this._gyms = TTTBookings.getMyBookings();
 			else this._gyms = TTTSchedules.getSchedules( scheduleDate );
 			
 		}
-
 		
 		//Overrided methods
 		public override int RowsInSection (UITableView tableView, int section )
@@ -36,12 +47,13 @@ namespace TheGym
 		public override UITableViewCell GetCell ( UITableView tableView, NSIndexPath indexPath )
 		{
 
-			GymClassTableViewCell tableViewCell = new GymClassTableViewCell( _gyms[ indexPath.Row ] );
-			
+			GymClassTableViewCell tableViewCell = new GymClassTableViewCell( _gyms[ indexPath.Row ] );			
 			return tableViewCell;
 			
 			
 		}
+		
+		
 	}
 }
 

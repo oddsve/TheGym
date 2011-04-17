@@ -8,30 +8,24 @@ namespace TheGym
 	{
 		
 		
-		private static Dictionary< string, List<GymClass> > schedules;
+		//private static Dictionary< string, List<GymClass> > schedules;
 		
 		public static List<GymClass> getSchedules( DateTime scheduleDate )
 		{
 			string scheduleDateString = scheduleDate.Year.ToString() + "-" 
 										+ scheduleDate.Month.ToString() + "-" 
 										+ scheduleDate.Day.ToString();
-			if ( schedules == null ) schedules = new Dictionary<string, List<GymClass>>();
+			//if ( schedules == null ) schedules = new Dictionary<string, List<GymClass>>();
 			
 			
-			if ( !schedules.ContainsKey( scheduleDateString )  ) 
-			{
-				populateSchedules( scheduleDateString );
-			}
-						
-			return schedules[ scheduleDateString ];
-			
-		}
+			//if ( !schedules.ContainsKey( scheduleDateString )  ) 
+			//{
+				
+			//}
+			//*/			
 
-		
-		private static void populateSchedules( string scheduleDateString )
-		{
 			
-			schedules[ scheduleDateString ] = new List<GymClass>();
+			List<GymClass>schedules = new List<GymClass>();
 			
  			string postData = "";
 			
@@ -131,14 +125,17 @@ namespace TheGym
 								gymClass.action = link.GetAttributeValue("href","");
 							}
 							
-							schedules[ scheduleDateString ].Add( gymClass );				
+							schedules.Add( gymClass );				
 						}
 					}
-				}				 
+				}
+				 
 			}		
 			
-			
+			return schedules;
 		}	
+		 
+		
 		
 		
 		

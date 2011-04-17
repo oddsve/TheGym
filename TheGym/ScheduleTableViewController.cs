@@ -24,12 +24,22 @@ namespace TheGym
 		public override void ViewDidLoad()
 		{
 			
+
 			TableView.DataSource = new ScheduleTableViewDataSource( _scheduleDate,_myBookings );
 			TableView.Delegate = new ScheduleTableViewDelegate(  this.navigationController );
 			
 			
 		}
 		
+		public override void ViewDidAppear (bool animated)
+		{
+			base.ViewDidAppear (animated);
+		}
+		
+		public override void ViewWillAppear (bool animated)
+		{
+			base.ViewWillAppear (animated);
+		}
 		
 	}
 }

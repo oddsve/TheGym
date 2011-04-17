@@ -21,10 +21,12 @@ namespace TheGym
 			
 			ScheduleTableViewDataSource dataSource = ( ScheduleTableViewDataSource ) tableView.DataSource;
 				
-			BookingViewController booking = new BookingViewController( dataSource.Gyms[ indexPath.Row ] );			
+			BookingViewController booking = new BookingViewController( dataSource.Gyms[ indexPath.Row ], tableView);			
 			_navigator.PushViewController( booking, true );
 			
 		}
+		
+		
 		
 	}
 }
