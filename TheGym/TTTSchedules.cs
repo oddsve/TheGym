@@ -71,6 +71,8 @@ namespace TheGym
 				if ( table.GetAttributeValue("class","") == "schedule" )
 				{
 					string date = "";
+					string time = "";
+					string title = "";
 					HtmlNodeCollection rows = table.SelectNodes( "//tr" );
 					
 					foreach  (HtmlNode row in rows )
@@ -94,20 +96,24 @@ namespace TheGym
 						     row.GetAttributeValue( "class","" ).ToString() == "row alternateRow" ||
 						     row.GetAttributeValue( "class","" ).ToString() == "row bookedRow") 
 						{
-							GymClass gymClass = new GymClass();
+							
+							
 							rowDocument.LoadHtml(  row.OuterHtml  );
 							cells = rowDocument.DocumentNode.SelectNodes( "//td" );
 							
-							gymClass.date = date;
+							
 							
 							cell = cells[0];
-							gymClass.time = cell.InnerText.Trim();
+							time = cell.InnerText.Trim();
 
-							cell = cells[1];
-							gymClass.gym = cell.InnerText.Trim();
 							
 							cell = cells[2];
-							gymClass.title = cell.InnerText.Trim();
+							title = cell.InnerText.Trim();
+							
+							GymClass gymClass = new GymClass(title,date,time);
+							
+							cell = cells[1];
+							gymClass.gym = cell.InnerText.Trim();
 							
 							cell = cells[3];
 							gymClass.instructor = cell.InnerText.Trim();

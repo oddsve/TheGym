@@ -19,18 +19,10 @@ namespace TheGym
 				
 			ScheduleViewController viewController = new ScheduleViewController( this , _scheduleDate , _myBookings );
 			this.PushViewController( viewController , true );
-		//	this.View.AddSubview( viewController.View );
-			
 			NavigationBarHidden = false;
 			
 		}
 		
-/*		public override void PushViewController ( UIViewController viewController, bool animated )
-		{
-			System.Console.WriteLine( "Antall:" + this.ViewControllers.Length );
-			base.PushViewController ( viewController, animated );
-			
-		}*/
 	}
 }
 

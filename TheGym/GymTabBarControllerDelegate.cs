@@ -20,7 +20,12 @@ namespace TheGym
 			
 		}
 		
+		public override void ViewControllerSelected (UITabBarController tabBarController, UIViewController viewController)
+		{
+			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
+		}
 		
+	
 		
 	}
 }

@@ -54,6 +54,7 @@ namespace TheGym
 			setButton();
 			
 			bookButton.TouchDown += delegate {
+					
 				_booked = !_booked;
 				setButton();
 					

@@ -94,6 +94,7 @@
     <Compile Include="GymsTableViewController.cs" />
     <Compile Include="GymsTableViewDelegate.cs" />
     <Compile Include="GymsTableViewDataSource.cs" />
+    <Compile Include="TTTBook.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xib" />

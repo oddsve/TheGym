@@ -25,6 +25,8 @@ namespace TheGym
 				if ( table.GetAttributeValue("class","") == "bookingsList groupActivityBookings" )
 				{
 					string date = "";
+					string time = "";
+					string title = "";
 					HtmlNodeCollection rows = table.SelectNodes( "//tr" );
 					
 					foreach  (HtmlNode row in rows )
@@ -39,18 +41,18 @@ namespace TheGym
 						if ( row.GetAttributeValue( "class","" ).ToString() == "normalRow"  || 
 						     row.GetAttributeValue( "class","" ).ToString() == "alternateRow" ) 
 						{
-							GymClass gymClass = new GymClass();
 							rowDocument.LoadHtml(  row.OuterHtml  );
 							cells = rowDocument.DocumentNode.SelectNodes( "//td" );
 							
-							gymClass.date = date;
 							
 							cell = cells[0];
-							gymClass.time = cell.InnerText.Trim();
+							time = cell.InnerText.Trim();
 
 							cell = cells[1];
-							gymClass.title = cell.InnerText.Trim();
+							title = cell.InnerText.Trim();
 			
+							GymClass gymClass = new GymClass( title, date, time );
+							
 							cell = cells[2];
 							gymClass.gym = cell.InnerText.Trim();
 							

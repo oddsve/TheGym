@@ -35,6 +35,7 @@ namespace TheGym
 		
 		public override UITableViewCell GetCell ( UITableView tableView, NSIndexPath indexPath )
 		{
+
 			GymClassTableViewCell tableViewCell = new GymClassTableViewCell( _gyms[ indexPath.Row ] );
 			
 			return tableViewCell;

@@ -26,9 +26,25 @@ namespace TheGym
 			
 			TableView.DataSource = new ScheduleTableViewDataSource( _scheduleDate,_myBookings );
 			TableView.Delegate = new ScheduleTableViewDelegate( this , this._navigationController );
-			if ( currentSelectedGymKeys != GymSettingsDataSource.selectedGymKeys ) TableView.ReloadData();
+			
 			
 			//base.ViewDidLoad();
+		}
+		
+		public override void ViewWillAppear (bool animated)
+		{
+			base.ViewWillAppear (animated);
+		}
+		
+		public override void ViewDidAppear (bool animated)
+		{
+			if ( currentSelectedGymKeys != GymSettingsDataSource.selectedGymKeys ) TableView.ReloadData();
+			base.ViewDidAppear (animated);
+		}
+		
+		public override void ViewWillDisappear (bool animated)
+		{
+			base.ViewWillDisappear (animated);
 		}
 		
 	}
