@@ -56,6 +56,7 @@ namespace TheGym
 				gymClass.book();
 				setButton();
 				tableView.ReloadData();
+				NavigationController.PopViewControllerAnimated( true );
 					
 			};
 

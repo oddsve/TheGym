@@ -9,7 +9,8 @@ namespace TheGym
 		public string vacant { get; set; }
 		public string gym { get; set; }
 		public string date { get ;set;  }
-		public string action { get; set; }
+		public string bookAction { get; set; }
+		public string unbookAction { get; set; }
 		public bool booked { get; set; }
 		public bool fullt { get; set; }
 
@@ -37,11 +38,11 @@ namespace TheGym
 		{
 			if ( booked ) 
 			{
-				TTTBook.unBook( action );
+				TTTBook.unBook( unbookAction );
 				booked = false;
 			} else
 			{
-				TTTBook.book ( action );
+				TTTBook.book ( bookAction );
 				booked = true;
 			}
 		}

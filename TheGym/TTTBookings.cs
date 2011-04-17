@@ -74,7 +74,7 @@ namespace TheGym
 							while (m.Success) 
 							{
 								
-								gymClass.action = "debook.action?bookingId=" + m.Groups[1].ToString() ;
+								gymClass.unbookAction = "debook.action?bookingId=" + m.Groups[1].ToString() ;
 							 	m = m.NextMatch();
 								
 							}

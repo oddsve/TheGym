@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 
 namespace TheGym
@@ -8,21 +9,11 @@ namespace TheGym
 	{
 		
 		
-		//private static Dictionary< string, List<GymClass> > schedules;
-		
 		public static List<GymClass> getSchedules( DateTime scheduleDate )
 		{
 			string scheduleDateString = scheduleDate.Year.ToString() + "-" 
 										+ scheduleDate.Month.ToString() + "-" 
 										+ scheduleDate.Day.ToString();
-			//if ( schedules == null ) schedules = new Dictionary<string, List<GymClass>>();
-			
-			
-			//if ( !schedules.ContainsKey( scheduleDateString )  ) 
-			//{
-				
-			//}
-			//*/			
 
 			
 			List<GymClass>schedules = new List<GymClass>();
@@ -40,16 +31,6 @@ namespace TheGym
 			postData = postData.Substring(1);	
 				
 				
-		/*		= String.Format(  
-		               "selectableUnits%5B0%5D.chosen=true&selectableUnits%5B1%5D.chosen=true&"+
-                         "selectableUnits%5B2%5D.chosen=true&selectableUnits%5B3%5D.chosen=true&"+
-                         "selectableUnits%5B4%5D.chosen=true&selectableUnits%5B5%5D.chosen=true&"+
-                         "selectableUnits%5B6%5D.chosen=true&selectableUnits%5B7%5D.chosen=true&"+
-                         "selectableUnits%5B8%5D.chosen=true&selectableUnits%5B9%5D.chosen=true&"+
-                         "selectableUnits%5B10%5D.chosen=true&group=all&date="+ scheduleDateString +
-                         "&group=all&");
-                         */
-
 			string activityUrl = "http://brp.netono.se/3t/mesh/showGroupActivities.action?businessUnit=1";
 
 			HtmlDocument document = new HtmlDocument();
@@ -122,8 +103,29 @@ namespace TheGym
 							if (cell.InnerText.Trim() == "Velg")
 							{
 								link = cell.SelectNodes( "//a" )[0];
-								gymClass.action = link.GetAttributeValue("href","");
+								gymClass.bookAction = link.GetAttributeValue("href","");
+							} 
+							
+							else if ( cell.InnerText.Trim() == "Avbooke")
+
+							{
+								link = cell.SelectNodes( "//a" )[0];
+								string href  = link.GetAttributeValue("href","");
+								
+								string pattern = "bookingId=(.*?)'";
+								// Instantiate the regular expression object.
+								Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
+								
+								// Match the regular expression pattern against a text string.
+								Match m = r.Match(href);
+								while (m.Success) 
+								{
+									gymClass.unbookAction = "debook.action?bookingId=" + m.Groups[1].ToString() ;
+								 	m = m.NextMatch();
+									
+								}
 							}
+							
 							
 							schedules.Add( gymClass );				
 						}
