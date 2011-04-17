@@ -75,23 +75,7 @@ namespace TheGym
 			yPos += spacing + gridHight;
 			
 			
-		/*	UIButton saveButton = UIButton.FromType(UIButtonType.RoundedRect );
-			
-			saveButton.Frame = new RectangleF( spacing,yPos,fieldWidth+labelWidth+spacing ,gridHight);
-			saveButton.SetTitle("Lagre",UIControlState.Normal );
-			saveButton.BackgroundColor = UIColor.Clear;
-			saveButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
-			saveButton.TouchDown += delegate {
-				GymSettingsDataSource.Write();
-				passwordField.ResignFirstResponder();
-					
-			};
-			
-			
-			View.AddSubview( saveButton );
-			
-			yPos += spacing + saveButton.Frame.Height;*/
-			
+		
 			gymsTableViewController = new GymsTableViewController();
 			gymsTableViewController.View.Frame = new RectangleF(0,yPos, View.Frame.Width,View.Frame.Height-70);
 			View.AddSubview( gymsTableViewController.View );
@@ -100,9 +84,11 @@ namespace TheGym
 		
 		public override void ViewDidDisappear (bool animated)
 		{
+			userNameField.ResignFirstResponder();
 			GymSettingsDataSource.UserName = userNameField.Text;
 			GymSettingsDataSource.Password = passwordField.Text;
 			GymSettingsDataSource.Write();
+			TTTHttp.LogOn();
 			base.ViewDidDisappear (animated);
 		}			
 		

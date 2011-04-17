@@ -11,6 +11,7 @@ namespace TheGym
 		public static string UserName { get; set; }
 		public static string Password { get ; set; }
 		public static List<string> selectedGymKeys { get; set; }
+		public static bool isLogedOn { get; set; }
 		private static string gymKeys;
 		
 		public static void Read ()

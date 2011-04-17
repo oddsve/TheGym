@@ -33,7 +33,19 @@ namespace TheGym
 		
 		public void ReloadData ()
 		{
-			if ( myBookings ) this._gyms = TTTBookings.getMyBookings();
+			if ( myBookings ) 
+			{
+				if ( !GymSettingsDataSource.isLogedOn ) 
+				{
+					GymClass notLoggedIn = new GymClass("Ikke logget inn", "Gå til settings" , "");
+					_gyms = new List<GymClass>();
+					_gyms.Add( notLoggedIn );
+				}
+				else
+				{
+					this._gyms = TTTBookings.getMyBookings();
+				}
+			}
 			else this._gyms = TTTSchedules.getSchedules( scheduleDate );
 			
 		}
@@ -49,7 +61,7 @@ namespace TheGym
 
 			GymClassTableViewCell tableViewCell = new GymClassTableViewCell( _gyms[ indexPath.Row ] );			
 			return tableViewCell;
-			
+		
 			
 		}
 		

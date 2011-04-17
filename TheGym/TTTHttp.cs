@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
+using HtmlAgilityPack;
 
 
 
@@ -15,7 +16,7 @@ namespace TheGym
 
 		
 		
-		public static void LogOn()
+		public static string LogOn()
 		{
 			cookies = new CookieContainer();
 			ServicePointManager.Expect100Continue = false;
@@ -31,7 +32,7 @@ namespace TheGym
 
 
 
-			HttpWebResponse initialResponse = (HttpWebResponse)initailRequest.GetResponse();
+			HttpWebResponse initialResponse = 	(HttpWebResponse)initailRequest.GetResponse();
 			CookieCollection initialCookieCollection = cookies.GetCookies(new Uri("http://brp.netono.se/3t/mesh/index.action"));
 
 			foreach (Cookie cookie in initialCookieCollection)
@@ -39,13 +40,14 @@ namespace TheGym
 				cookie.Path = "/";
 				cookies.Add(cookie);
 			}
-
-
-			HttpWebRequest loginRequest = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/login.action");
+			initialResponse.Close();
+			
+			HttpWebRequest loginRequest; 
+			loginRequest = null;
+			loginRequest = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/login.action");
 
 			string loginString = "username=" + GymSettingsDataSource.UserName + "&password=" 
 						+ GymSettingsDataSource.Password + "&isSaving=G%E5+videre";
-			System.Console.WriteLine( loginString );
 			
 			byte[] data = Encoding.Default.GetBytes( loginString );
 			loginRequest.ContentLength = data.Length;
@@ -57,8 +59,8 @@ namespace TheGym
 			loginRequest.KeepAlive = true;
 			loginRequest.ContentType = "application/x-www-form-urlencoded";
 			
-			Stream loginStream;
-			loginStream = loginRequest.GetRequestStream();
+			Stream loginStream = null;
+			loginStream  = loginRequest.GetRequestStream();
 			loginStream.Write(data, 0, data.Length);
 
 			loginStream.Close();
@@ -74,13 +76,31 @@ namespace TheGym
 			}
 
 			StreamReader reader = new StreamReader( loginResponse.GetResponseStream());
-			reader.ReadToEnd();
+			string response = reader.ReadToEnd();
 			
-
+			loginResponse.Close();
+			reader.Close();
+			
+			HtmlDocument document = new HtmlDocument();
+			document.LoadHtml( response );
+			
+			HtmlNodeCollection spans = document.DocumentNode.SelectNodes( "//span[@class='errordescription']" ) ;
+			string error ="";
+			GymSettingsDataSource.isLogedOn = true;
+			if ( spans != null )
+			{
+				foreach ( HtmlNode span in spans )
+				{
+					GymSettingsDataSource.isLogedOn = false;
+					error = span.InnerText;			 
+				}
+			}
+			
+			return error;	
 		}	
 		
 		
-		public static string PostHTTP( string url, string postData)//string scheduleDateString ) 
+		public static string PostHTTP( string url, string postData)
 		{		
 			// now we can send out cookie along with a request for the protected page
 			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( url );
@@ -120,38 +140,6 @@ namespace TheGym
 			return responseData;
 		}
 		
-/*		public static void sendAction ( string gymAction )
-		{
-			string actionURL =  "http://brp.netono.se/3t/mesh/" + gymAction ;
-			
-			
-			// now we can send out cookie along with a request for the protected page
-			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( actionURL );
-			webRequest.Method = "GET";
-			webRequest.CookieContainer = cookies;
-			
-			System.Console.WriteLine ( "====" );
-			CookieCollection coco = cookies.GetCookies( new Uri( actionURL ) );
-			foreach  ( Cookie c in coco ) 
-			{					
-				System.Console.WriteLine( c.Name );
-				System.Console.WriteLine( c.Value );
-			}			
-			
-
-            //Get Response
-            HttpWebResponse webResponse = (HttpWebResponse) webRequest.GetResponse();
-
-			StreamReader responseReader = new StreamReader( webRequest.GetResponse().GetResponseStream() , Encoding.UTF7);
-   
-			// and read the response
-			string responseData = responseReader.ReadToEnd();
-			responseReader.Close();
-			
-	//		System.Console.Write( responseData );
-			
-		}*/
-
 		
 	}
 		

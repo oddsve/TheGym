@@ -22,7 +22,14 @@ namespace TheGym
 		private void setButton() 
 		{
 			
-			if ( gymClass.booked ) 
+			if ( ! GymSettingsDataSource.isLogedOn ) 
+			{
+				bookButton.SetTitle("Ikke pålogget",UIControlState.Normal );
+				bookButton.Enabled = false;
+				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
+				
+			}
+			else if ( gymClass.booked ) 
 			{
 				bookButton.SetTitle("Avbestill",UIControlState.Normal );
 				bookButton.Enabled = true;
