@@ -43,7 +43,10 @@ namespace TheGym
 
 			HttpWebRequest loginRequest = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/login.action");
 
-			string loginString = "username=rebekka%40sveas.org&password=200876&isSaving=G%E5+videre";
+			string loginString = "username=" + GymSettingsDataSource.UserName + "&password=" 
+						+ GymSettingsDataSource.Password + "&isSaving=G%E5+videre";
+			System.Console.WriteLine( loginString );
+			
 			byte[] data = Encoding.Default.GetBytes( loginString );
 			loginRequest.ContentLength = data.Length;
 

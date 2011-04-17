@@ -82,8 +82,6 @@ namespace TheGym
 			saveButton.BackgroundColor = UIColor.Clear;
 			saveButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
 			saveButton.TouchDown += delegate {
-				GymSettingsDataSource.UserName = userNameField.Text;
-				GymSettingsDataSource.Password = passwordField.Text;
 				GymSettingsDataSource.Write();
 				passwordField.ResignFirstResponder();
 					
@@ -102,6 +100,8 @@ namespace TheGym
 		
 		public override void ViewDidDisappear (bool animated)
 		{
+			GymSettingsDataSource.UserName = userNameField.Text;
+			GymSettingsDataSource.Password = passwordField.Text;
 			GymSettingsDataSource.Write();
 			base.ViewDidDisappear (animated);
 		}			

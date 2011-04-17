@@ -23,8 +23,8 @@ namespace TheGym
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
 			
-			TTTHttp.LogOn();
 			GymSettingsDataSource.Read();
+			TTTHttp.LogOn();
 			
 			tabBarController = new GymTabBarController();
 			window.AddSubview ( tabBarController.View );
