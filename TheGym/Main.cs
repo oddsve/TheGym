@@ -24,6 +24,7 @@ namespace TheGym
 		{
 			
 			TTTHttp.LogOn();
+			GymSettingsDataSource.Read();
 			
 			tabBarController = new GymTabBarController();
 			window.AddSubview ( tabBarController.View );

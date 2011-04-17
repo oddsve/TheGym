@@ -8,9 +8,9 @@ namespace TheGym
 {
 	public class ScheduleTableViewDelegate : UITableViewDelegate
 	{
-		private ScheduleNavigationController _navigator;
+		private UINavigationController _navigator;
 		
-		public ScheduleTableViewDelegate (  ScheduleNavigationController navigator) :base()
+		public ScheduleTableViewDelegate (  UINavigationController navigator) :base()
 		{
 			this._navigator = navigator;
 		}
