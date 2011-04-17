@@ -75,7 +75,7 @@ namespace TheGym
 			yPos += spacing + gridHight;
 			
 			
-			UIButton saveButton = UIButton.FromType(UIButtonType.RoundedRect );
+		/*	UIButton saveButton = UIButton.FromType(UIButtonType.RoundedRect );
 			
 			saveButton.Frame = new RectangleF( spacing,yPos,fieldWidth+labelWidth+spacing ,gridHight);
 			saveButton.SetTitle("Lagre",UIControlState.Normal );
@@ -92,10 +92,10 @@ namespace TheGym
 			
 			View.AddSubview( saveButton );
 			
-			yPos += spacing + saveButton.Frame.Height;
+			yPos += spacing + saveButton.Frame.Height;*/
 			
 			gymsTableViewController = new GymsTableViewController();
-			gymsTableViewController.View.Frame = new RectangleF(0,yPos, View.Frame.Width,View.Frame.Height);
+			gymsTableViewController.View.Frame = new RectangleF(0,yPos, View.Frame.Width,View.Frame.Height-70);
 			View.AddSubview( gymsTableViewController.View );
 			
 		}
