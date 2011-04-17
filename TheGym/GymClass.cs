@@ -9,8 +9,21 @@ namespace TheGym
 		public string vacant { get; set; }
 		public string gym { get; set; }
 		public string date { get ;set;  }
-		public string status { get; set; }
 		public string action { get; set; }
+		public bool booked { get; set; }
+		public bool fullt { get; set; }
+
+		private string _status;
+		public string status 
+		{ 	
+			get{ return _status; } 
+			set
+			{ 
+				_status = value;
+				this.booked = value == "Booket";
+				this.fullt = value == "Fullt";
+			} 
+		}
 		
 		
 		public GymClass( string title, string date, string time)

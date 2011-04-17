@@ -38,9 +38,9 @@ namespace TheGym
 			classTime.Text= _gymClass.time;
 			gym.Text = _gymClass.gym;
 			
-			if ( _gymClass.status == "Fullt" ) 
+			if ( _gymClass.fullt ) 
 				vacant.Text = "Fullt";
-			else if ( vacant == null )
+			else if ( _gymClass.vacant == null )
 				vacant.Text ="";
 			else 
 				vacant.Text = _gymClass.vacant + " ledig" ;
@@ -50,10 +50,10 @@ namespace TheGym
 			UIColor textColor = UIColor.White;
 			backGround.BackgroundColor = UIColor.Black;
 			
-			if ( _gymClass.status == "Fullt" )
+			if ( _gymClass.fullt )
 			{
 				backGround.BackgroundColor = UIColor.Gray;
-			} else if ( _gymClass.status == "Booket" )
+			} else if ( _gymClass.booked )
 			{
 				backGround.BackgroundColor = UIColor.Green;
 				textColor = UIColor.Black;
