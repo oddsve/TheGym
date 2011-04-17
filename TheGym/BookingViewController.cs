@@ -50,7 +50,7 @@ namespace TheGym
 			
 			bookButton.TouchDown += delegate {
 					
-				gymClass.booked = !gymClass.booked ;
+				gymClass.book();
 				setButton();
 					
 			};

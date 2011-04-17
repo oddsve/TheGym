@@ -33,6 +33,18 @@ namespace TheGym
 			this.date = date;			
 		}
 		
+		public void book()
+		{
+			if ( booked ) 
+			{
+				TTTBook.unBook( action );
+				booked = false;
+			} else
+			{
+				TTTBook.book ( action );
+				booked = true;
+			}
+		}
 		
 	
 	}
