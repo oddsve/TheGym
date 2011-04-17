@@ -30,9 +30,9 @@ namespace TheGym
 		{
 			this.title = title;
 			this.time = time;
-			this.date = date;
-			
+			this.date = date;			
 		}
+		
 		
 	
 	}

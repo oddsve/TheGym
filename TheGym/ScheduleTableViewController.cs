@@ -25,7 +25,7 @@ namespace TheGym
 		{
 			
 			TableView.DataSource = new ScheduleTableViewDataSource( _scheduleDate,_myBookings );
-			TableView.Delegate = new ScheduleTableViewDelegate( this , this._navigationController );
+			TableView.Delegate = new ScheduleTableViewDelegate(  this._navigationController );
 			
 			
 			//base.ViewDidLoad();

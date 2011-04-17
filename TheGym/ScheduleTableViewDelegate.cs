@@ -8,13 +8,10 @@ namespace TheGym
 {
 	public class ScheduleTableViewDelegate : UITableViewDelegate
 	{
-		private ScheduleTableViewController _controller;
 		private ScheduleNavigationController _navigator;
 		
-		public ScheduleTableViewDelegate ( ScheduleTableViewController controller
-		                                  	, ScheduleNavigationController navigator) :base()
+		public ScheduleTableViewDelegate (  ScheduleNavigationController navigator) :base()
 		{
-			this._controller = controller;
 			this._navigator = navigator;
 		}
 		
@@ -22,12 +19,12 @@ namespace TheGym
 		public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 		{
 			
-			ScheduleTableViewDataSource dataSource = ( ScheduleTableViewDataSource ) _controller.TableView.DataSource;
+			ScheduleTableViewDataSource dataSource = ( ScheduleTableViewDataSource ) tableView.DataSource;
+				
 			
 			
 			
-			BookingViewController booking = new BookingViewController( dataSource.Gyms[ indexPath.Row ].title,
-			                                                          dataSource.Gyms[ indexPath.Row ].status );			
+			BookingViewController booking = new BookingViewController( dataSource.Gyms[ indexPath.Row ] );			
 			_navigator.PushViewController( booking, true );
 			
 			

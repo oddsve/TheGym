@@ -8,29 +8,24 @@ namespace TheGym
 	public class BookingViewController : UIViewController
 	{
 		UIButton bookButton;
-		Boolean _booked;
-		Boolean _fullt;
+		GymClass gymClass;		
 		
-		
-		public BookingViewController ( string title , string status) 
+		public BookingViewController ( GymClass gymClass ) 
 		{
-			System.Console.WriteLine( status );
-			Title = title;
-			_booked = status == "Booket";
-			_fullt = status == "Fullt";
-			
+			Title = gymClass.title;
+			this. gymClass = gymClass;			
 		}
 		
 		private void setButton() 
 		{
 			
-			if ( _booked ) 
+			if ( gymClass.booked ) 
 			{
 				bookButton.SetTitle("Avbestill",UIControlState.Normal );
 				bookButton.Enabled = true;
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/redbutton.png" ), UIControlState.Normal );
 			}
-			else if ( _fullt ) 
+			else if ( gymClass.fullt ) 
 			{
 				bookButton.SetTitle("Fullt",UIControlState.Normal );
 				bookButton.Enabled = false;	
@@ -55,7 +50,7 @@ namespace TheGym
 			
 			bookButton.TouchDown += delegate {
 					
-				_booked = !_booked;
+				gymClass.booked = !gymClass.booked ;
 				setButton();
 					
 			};
