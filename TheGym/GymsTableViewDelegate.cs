@@ -6,7 +6,6 @@ namespace TheGym
 {
 	public class GymsTableViewDelegate : UITableViewDelegate
 	{
-		GymsTableViewDataSource _dataSource;
 		public GymsTableViewDelegate (  )
 		{
 		}

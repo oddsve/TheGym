@@ -7,13 +7,12 @@ namespace TheGym
 {
 	public class GymTabBarController : UITabBarController
 	{
-		GymTabBarControllerDelegate gymDelegate;
-		private DateTime dateToDay; 
+		//GymTabBarControllerDelegate gymDelegate;
 		public GymTabBarController ()
 		{
 			
 			
-			gymDelegate = new GymTabBarControllerDelegate();
+		//	gymDelegate = new GymTabBarControllerDelegate();
 			
 				
 		}
@@ -58,7 +57,7 @@ namespace TheGym
 			tabs[7].TabBarItem = new UITabBarItem( "mine bestillinger", new UIImage() ,8);
 
 			tabs[8] = new GymSettingsViewController();
-			tabs[8].TabBarItem = new UITabBarItem( "Innstillinger", new UIImage() ,0);
+			tabs[8].TabBarItem = new UITabBarItem( "innstillinger", new UIImage() ,0);
 			
 			
 			ViewControllers = tabs;

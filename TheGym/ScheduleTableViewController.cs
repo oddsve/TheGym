@@ -11,14 +11,12 @@ namespace TheGym
 		private UINavigationController navigationController;
 		private DateTime _scheduleDate;
 		private bool _myBookings;
-		private List<string> currentSelectedGymKeys;
 		
 		public ScheduleTableViewController( UINavigationController navigationController, DateTime scheduleDate, bool myBookings )
 		{
 			this.navigationController = navigationController;
 			this._scheduleDate = scheduleDate;
 			this._myBookings = myBookings;
-			currentSelectedGymKeys = new List<string>();
 		}
 		
 		public override void ViewDidLoad()

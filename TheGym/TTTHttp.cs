@@ -13,11 +13,34 @@ namespace TheGym
 	{
 
 		static CookieContainer cookies;
-
+		public static string ErrorMessage { set; get; }
+		public static bool isError { set; get; }
 		
-		
-		public static string LogOn()
+		private static void findErrors( string output )
 		{
+			HtmlDocument document = new HtmlDocument();
+			document.LoadHtml( output );
+			
+			HtmlNodeCollection spans = document.DocumentNode.SelectNodes( "//span[@class='errordescription']" ) ;
+			ErrorMessage ="";
+			
+			if ( spans != null )
+			{
+				foreach ( HtmlNode span in spans )
+				{
+					ErrorMessage = span.InnerText;
+					isError = true;
+				}
+			}
+			
+			
+		}
+		
+		
+		public static void  LogOn()
+		{
+			isError = false;
+			ErrorMessage = "";
 			cookies = new CookieContainer();
 			ServicePointManager.Expect100Continue = false;
 
@@ -67,7 +90,7 @@ namespace TheGym
 
 			
 			HttpWebResponse loginResponse = (HttpWebResponse)loginRequest.GetResponse();
-			initialCookieCollection = cookies.GetCookies(new Uri("http://brp.netono.se/3t/mesh/login.action"));
+			initialCookieCollection = cookies.GetCookies( new Uri("http://brp.netono.se/3t/mesh/login.action" ) );
 
 			foreach (Cookie cookie in initialCookieCollection)
 			{
@@ -81,27 +104,18 @@ namespace TheGym
 			loginResponse.Close();
 			reader.Close();
 			
-			HtmlDocument document = new HtmlDocument();
-			document.LoadHtml( response );
+			findErrors( response );
 			
-			HtmlNodeCollection spans = document.DocumentNode.SelectNodes( "//span[@class='errordescription']" ) ;
-			string error ="";
-			GymSettingsDataSource.isLogedOn = true;
-			if ( spans != null )
-			{
-				foreach ( HtmlNode span in spans )
-				{
-					GymSettingsDataSource.isLogedOn = false;
-					error = span.InnerText;			 
-				}
-			}
+			if ( !isError ) 	GymSettingsDataSource.isLogedOn = true;
+			else GymSettingsDataSource.isLogedOn = false;
 			
-			return error;	
 		}	
 		
 		
 		public static string PostHTTP( string url, string postData)
 		{		
+			isError = false;
+			ErrorMessage = "";
 			// now we can send out cookie along with a request for the protected page
 			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( url );
 			webRequest.Method = "POST";
@@ -124,6 +138,8 @@ namespace TheGym
 		
 		public static string getHTTP ( string url )
 		{
+			isError = false;
+			ErrorMessage = "";
 			// now we can send out cookie along with a request for the protected page
 			HttpWebRequest webRequest = ( HttpWebRequest )WebRequest.Create( url );
 			webRequest.ContentType = "application/x-www-form-urlencoded";
@@ -134,8 +150,8 @@ namespace TheGym
 			// and read the response
 			string responseData = responseReader.ReadToEnd();
 			
-			//responseData =Encoding.Convert( Encoding.UTF7, Encoding.UTF8, responseData );
 			responseReader.Close();
+			findErrors( responseData );
 			
 			return responseData;
 		}

@@ -20,7 +20,7 @@ namespace TheGym
 		{
 			
 			
-			Title = "Innstillinger";
+			Title = "innstillinger";
 			
 			View.BackgroundColor = UIColor.Black ;
 			
