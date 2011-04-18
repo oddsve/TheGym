@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -24,38 +25,40 @@ namespace TheGym
 			
 			DateTime toDay = DateTime.Now;
 			
+			CultureInfo no = new CultureInfo("nn-NO");
+			
 			tabs[0] = new UINavigationController( new ScheduleViewController( toDay , false ) );
-			tabs[0].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString() , new UIImage() ,1);
+			tabs[0].TabBarItem = new UITabBarItem( toDay.ToString("dddd", no ) , new UIImage() ,1);
 			
 			toDay = toDay.AddDays(1);
 			tabs[1] = new UINavigationController( new ScheduleViewController( toDay , false ) );
-			tabs[1].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,2);
+			tabs[1].TabBarItem = new UITabBarItem( toDay.ToString("dddd", no ), new UIImage() ,2);
 
 			toDay = toDay.AddDays(1);
 			tabs[2] = new UINavigationController( new ScheduleViewController( toDay , false ) );
-			tabs[2].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,3);
+			tabs[2].TabBarItem = new UITabBarItem( toDay.ToString("dddd", no ), new UIImage() ,3);
 
 			toDay = toDay.AddDays(1);
 			tabs[3] = new UINavigationController( new ScheduleViewController( toDay , false ) );
-			tabs[3].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,4);
+			tabs[3].TabBarItem = new UITabBarItem( toDay.ToString("dddd", no ), new UIImage() ,4);
 			
 			toDay = toDay.AddDays(1);
 			tabs[4] = new UINavigationController( new ScheduleViewController( toDay , false ) );
-			tabs[4].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,5);
+			tabs[4].TabBarItem = new UITabBarItem( toDay.ToString("dddd", no ), new UIImage() ,5);
 			
 			toDay = toDay.AddDays(1);
 			tabs[5] = new UINavigationController( new ScheduleViewController( toDay , false ) );
-			tabs[5].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,6);
+			tabs[5].TabBarItem = new UITabBarItem( toDay.ToString("dddd", no ), new UIImage() ,6);
 
 			toDay = toDay.AddDays(1);
 			tabs[6] = new UINavigationController( new ScheduleViewController( toDay , false ) );
-			tabs[6].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString(), new UIImage() ,7);
+			tabs[6].TabBarItem = new UITabBarItem( toDay.ToString("dddd", no ), new UIImage() ,7);
 									
 			tabs[7] = new UINavigationController( new ScheduleViewController( toDay , true  ) );
-			tabs[7].TabBarItem = new UITabBarItem( "Mine bookinger", new UIImage() ,8);
+			tabs[7].TabBarItem = new UITabBarItem( "mine bestillinger", new UIImage() ,8);
 
 			tabs[8] = new GymSettingsViewController();
-			tabs[8].TabBarItem = new UITabBarItem( "Settings", new UIImage() ,0);
+			tabs[8].TabBarItem = new UITabBarItem( "Innstillinger", new UIImage() ,0);
 			
 			
 			ViewControllers = tabs;

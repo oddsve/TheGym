@@ -1,5 +1,6 @@
 
 using System;
+using System.Globalization;
 using MonoTouch.UIKit;
 using System.Drawing;
 using System.Linq;
@@ -23,9 +24,15 @@ namespace TheGym
 			
 		public override void ViewDidLoad ()
 		{
-			
-			Title = _scheduleDate.DayOfWeek.ToString();
-			
+			if ( _myBookings ) 
+			{
+				Title = "mine bestillinger";
+			}
+			else 
+			{
+				CultureInfo no = new CultureInfo("nn-NO");
+				Title = _scheduleDate.ToString("dddd",no);
+			}
 			
 	
 			scheduleTableViewController = 
