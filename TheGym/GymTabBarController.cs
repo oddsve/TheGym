@@ -7,6 +7,7 @@ namespace TheGym
 	public class GymTabBarController : UITabBarController
 	{
 		GymTabBarControllerDelegate gymDelegate;
+		private DateTime dateToDay; 
 		public GymTabBarController ()
 		{
 			
@@ -16,18 +17,12 @@ namespace TheGym
 				
 		}
 		
-		public override void ViewDidLoad ()
+		
+		public void arrangeTabBars()
 		{
-			
-			base.ViewDidLoad ();
-			
-			var tabs = new UIViewController[9];
-			
-			
+			var tabs = new UIViewController[9];		
 			
 			DateTime toDay = DateTime.Now;
-			
-			 
 			
 			tabs[0] = new UINavigationController( new ScheduleViewController( toDay , false ) );
 			tabs[0].TabBarItem = new UITabBarItem( toDay.DayOfWeek.ToString() , new UIImage() ,1);
@@ -65,9 +60,17 @@ namespace TheGym
 			
 			ViewControllers = tabs;
 			
+		}
+		
+		public override void ViewDidLoad ()
+		{
+			
+			base.ViewDidLoad ();
+			arrangeTabBars();
 		
 			
 		}
+		
 		
 
 		

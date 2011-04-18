@@ -34,6 +34,11 @@ namespace TheGym
 			
 			return true;
 		}
+		
+		public override void WillEnterForeground (UIApplication application)
+		{
+			tabBarController.arrangeTabBars();
+		}
 
 		public override void OnActivated (UIApplication application)
 		{

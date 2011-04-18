@@ -85,6 +85,7 @@ namespace TheGym
 		public override void ViewDidDisappear (bool animated)
 		{
 			userNameField.ResignFirstResponder();
+			passwordField.ResignFirstResponder();
 			GymSettingsDataSource.UserName = userNameField.Text;
 			GymSettingsDataSource.Password = passwordField.Text;
 			GymSettingsDataSource.Write();
