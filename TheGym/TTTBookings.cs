@@ -21,68 +21,71 @@ namespace TheGym
 			HtmlDocument rowDocument= new HtmlDocument();
 									
 			HtmlNodeCollection tables = document.DocumentNode.SelectNodes( "//table[@class='bookingsList groupActivityBookings']" ) ;
-			foreach ( HtmlNode table in tables )
+			if ( tables != null ) 
 			{
-				if ( table.GetAttributeValue("class","") == "bookingsList groupActivityBookings" )
+				foreach ( HtmlNode table in tables )
 				{
-					string date = "";
-					string time = "";
-					string title = "";
-					HtmlNodeCollection rows = table.SelectNodes( "//tr" );
-					
-					foreach  (HtmlNode row in rows )
+					if ( table.GetAttributeValue("class","") == "bookingsList groupActivityBookings" )
 					{
+						string date = "";
+						string time = "";
+						string title = "";
+						HtmlNodeCollection rows = table.SelectNodes( "//tr" );
 						
-						HtmlNodeCollection cells;
-						HtmlNode cell;
-						HtmlNode link;
-											
-												    
-							
-						if ( row.GetAttributeValue( "class","" ).ToString() == "normalRow"  || 
-						     row.GetAttributeValue( "class","" ).ToString() == "alternateRow" ) 
+						foreach  (HtmlNode row in rows )
 						{
-							rowDocument.LoadHtml(  row.OuterHtml  );
-							cells = rowDocument.DocumentNode.SelectNodes( "//td" );
 							
-							
-							cell = cells[0];
-							time = cell.InnerText.Trim();
-
-							cell = cells[1];
-							title = cell.InnerText.Trim();
-			
-							GymClass gymClass = new GymClass( title, date, time );
-							
-							cell = cells[2];
-							gymClass.gym = cell.InnerText.Trim();
-							
-							cell = cells[3];
-							gymClass.instructor = cell.InnerText.Trim();
-														
-							cell = cells[4];
-							link = cell.SelectNodes( "//a" )[0];
-							
-							string href = link.GetAttributeValue( "href" , "" );
-							
-							string pattern = "bookingId=(.*?)'";
-							// Instantiate the regular expression object.
-							Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
-							
-							// Match the regular expression pattern against a text string.
-							Match m = r.Match(href);
-							while (m.Success) 
+							HtmlNodeCollection cells;
+							HtmlNode cell;
+							HtmlNode link;
+												
+													    
+								
+							if ( row.GetAttributeValue( "class","" ).ToString() == "normalRow"  || 
+							     row.GetAttributeValue( "class","" ).ToString() == "alternateRow" ) 
 							{
+								rowDocument.LoadHtml(  row.OuterHtml  );
+								cells = rowDocument.DocumentNode.SelectNodes( "//td" );
 								
-								gymClass.unbookAction = "debook.action?bookingId=" + m.Groups[1].ToString() ;
-							 	m = m.NextMatch();
 								
+								cell = cells[0];
+								time = cell.InnerText.Trim();
+	
+								cell = cells[1];
+								title = cell.InnerText.Trim();
+				
+								GymClass gymClass = new GymClass( title, date, time );
+								
+								cell = cells[2];
+								gymClass.gym = cell.InnerText.Trim();
+								
+								cell = cells[3];
+								gymClass.instructor = cell.InnerText.Trim();
+															
+								cell = cells[4];
+								link = cell.SelectNodes( "//a" )[0];
+								
+								string href = link.GetAttributeValue( "href" , "" );
+								
+								string pattern = "bookingId=(.*?)'";
+								// Instantiate the regular expression object.
+								Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
+								
+								// Match the regular expression pattern against a text string.
+								Match m = r.Match(href);
+								while (m.Success) 
+								{
+									
+									gymClass.unbookAction = "debook.action?bookingId=" + m.Groups[1].ToString() ;
+								 	m = m.NextMatch();
+									
+								}
+								
+								gymClass.status = "Booket";
+								
+								
+								myBookings.Add( gymClass );				
 							}
-							
-							gymClass.status = "Booket";
-							
-							
-							myBookings.Add( gymClass );				
 						}
 					}
 				}				 

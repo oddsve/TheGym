@@ -90,6 +90,16 @@ namespace TheGym
 			GymSettingsDataSource.Password = passwordField.Text;
 			GymSettingsDataSource.Write();
 			TTTHttp.LogOn();
+			if ( TTTHttp.isError ) 
+			{
+				UIAlertView alert = new UIAlertView();
+				alert.Title = "Påloggingsfeil";
+				alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
+				//System.Console.WriteLine( TTTHttp.ErrorMessage );
+				alert.AddButton("OK");
+				alert.Show();
+			}
+			
 			base.ViewDidDisappear (animated);
 		}			
 		

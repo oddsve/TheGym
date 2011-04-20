@@ -24,15 +24,17 @@ namespace TheGym
 		{
 			
 			GymSettingsDataSource.Read();
-			TTTHttp.LogOn() ;
-			
-			
-			
+			Text.initialize();
 			tabBarController = new GymTabBarController();
-			window.AddSubview ( tabBarController.View );
-			
+			window.AddSubview ( tabBarController.View );		
 			
 			window.MakeKeyAndVisible ();
+
+			if ( GymSettingsDataSource.UserName == "" || GymSettingsDataSource.Password == "" )
+			{
+				tabBarController.SelectedIndex = 8;
+			}
+			else TTTHttp.LogOn() ;
 			
 			return true;
 		}

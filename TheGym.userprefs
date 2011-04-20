@@ -1,34 +1,32 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TheGym/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheGym/MainWindow.xib.designer.cs">
     <Files>
-      <File FileName="TheGym/Main.cs" Line="27" Column="33" />
-      <File FileName="TheGym/ScheduleViewController.cs" Line="33" Column="1" />
+      <File FileName="TheGym/Main.cs" Line="30" Column="4" />
+      <File FileName="TheGym/ScheduleViewController.cs" Line="29" Column="33" />
       <File FileName="TheGym/MainWindow.xib.designer.cs" Line="11" Column="17" />
-      <File FileName="TheGym/GymSettingsViewController.cs" Line="105" Column="34" />
-      <File FileName="TheGym/GymSettingsDataSource.cs" Line="16" Column="26" />
+      <File FileName="TheGym/GymSettingsViewController.cs" Line="23" Column="14" />
+      <File FileName="TheGym/GymSettingsDataSource.cs" Line="12" Column="1" />
       <File FileName="TheGym/GymClass.cs" Line="8" Column="36" />
       <File FileName="TheGym/GymClassTableViewCell.cs" Line="43" Column="1" />
-      <File FileName="TheGym/ScheduleTableViewController.cs" Line="22" Column="4" />
-      <File FileName="TheGym/ScheduleTableViewDataSource.cs" Line="38" Column="1" />
+      <File FileName="TheGym/ScheduleTableViewController.cs" Line="20" Column="1" />
+      <File FileName="TheGym/ScheduleTableViewDataSource.cs" Line="41" Column="35" />
       <File FileName="TheGym/ScheduleTableViewDelegate.cs" Line="30" Column="2" />
-      <File FileName="TheGym/GymTabBarController.cs" Line="1" Column="1" />
+      <File FileName="TheGym/GymTabBarController.cs" Line="15" Column="5" />
       <File FileName="../FlightsNorway/MonoTouch/FlightsNorway/AppDelegateIPhone.cs" Line="1" Column="1" />
       <File FileName="../FlightsNorway/MonoTouch/FlightsNorway/MainTabBarController.cs" Line="1" Column="1" />
       <File FileName="TheGym/TTTSchedules.cs" Line="36" Column="26" />
       <File FileName="../AtTheGym/AtTheGym/TTTHttpSession.cs" Line="183" Column="1" />
-      <File FileName="TheGym/TTTHttp.cs" Line="122" Column="69" />
+      <File FileName="TheGym/TTTHttp.cs" Line="109" Column="1" />
       <File FileName="TheGym/GymTabBarControllerDelegate.cs" Line="15" Column="1" />
       <File FileName="TheGym/BookingViewController.cs" Line="57" Column="1" />
       <File FileName="../monotouch-samples/NavigationControllerSample/NavigationControllerSample/NavigationController.cs" Line="1" Column="1" />
-      <File FileName="TheGym/ScheduleNavigationController.cs" Line="22" Column="1" />
-      <File FileName="TheGym/ScheduleSearchBar.cs" Line="13" Column="1" />
-      <File FileName="TheGym/TTTBookings.cs" Line="51" Column="24" />
+      <File FileName="TheGym/TTTBookings.cs" Line="24" Column="1" />
       <File FileName="TheGym/TTTGyms.cs" Line="98" Column="1" />
       <File FileName="TheGym/GymsTableViewController.cs" Line="21" Column="4" />
-      <File FileName="TheGym/GymsTableViewDelegate.cs" Line="16" Column="4" />
+      <File FileName="TheGym/GymsTableViewDelegate.cs" Line="9" Column="1" />
       <File FileName="TheGym/GymsTableViewDataSource.cs" Line="15" Column="4" />
-      <File FileName="TheGym/TTTBook.cs" Line="10" Column="48" />
+      <File FileName="TheGym/TTTBook.cs" Line="17" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -36,8 +34,9 @@
           <Node name="TheGym" expanded="True">
             <Node name="References" expanded="True" />
             <Node name="images" expanded="True" />
-            <Node name="Main.cs" selected="True" />
-            <Node name="MainWindow.xib" expanded="True" />
+            <Node name="MainWindow.xib" expanded="True">
+              <Node name="MainWindow.xib.designer.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -54,9 +53,9 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/Oddis/Projects/TheGym/TheGym/ScheduleTableViewController.cs" line="41" />
-      <Breakpoint file="/Users/Oddis/Projects/TheGym/TheGym/ScheduleTableViewController.cs" line="47" />
-      <Breakpoint file="/Users/Oddis/Projects/TheGym/TheGym/ScheduleTableViewController.cs" line="36" />
+      <Breakpoint file="/Users/Oddis/Projects/TheGym/TheGym/ScheduleTableViewController.cs" line="39" />
+      <Breakpoint file="/Users/Oddis/Projects/TheGym/TheGym/ScheduleTableViewController.cs" line="45" />
+      <Breakpoint file="/Users/Oddis/Projects/TheGym/TheGym/ScheduleTableViewController.cs" line="34" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
