@@ -21,6 +21,7 @@ namespace TheGym
 			UITableViewCell cell =  new UITableViewCell();
 			cell.TextLabel.Text = gymNames[ indexPath.Row ];
 			cell.TextLabel.TextColor = UIColor.White;
+			cell.TextLabel.Font = UIFont.SystemFontOfSize(18);
 			
 			if ( GymSettingsDataSource.selectedGymKeys.Contains( gymKeys[ indexPath.Row ] ) )
 			{
@@ -31,6 +32,8 @@ namespace TheGym
 			}
 			return cell;		
 		}
+		
+		
 		
 		public override int RowsInSection ( UITableView tableView, int section )
 		{

@@ -17,6 +17,10 @@ namespace TheGym
 			dataSoruce.toggleCell (indexPath );
 			tableView.ReloadData();
 		}
+		public override float GetHeightForRow (UITableView tableView, NSIndexPath indexPath)
+		{
+			return 25;
+		}
 	}
 }
 

@@ -74,6 +74,15 @@ namespace TheGym
 			
 			yPos += spacing + gridHight;
 			
+			UILabel myGymsLabel = new UILabel( new RectangleF (0,yPos, View.Frame.Width, 30));
+			myGymsLabel.Text = "Mine 3T-sentre";
+			myGymsLabel.BackgroundColor = UIColor.Black;
+			myGymsLabel.TextColor = UIColor.White;
+			myGymsLabel.TextAlignment = UITextAlignment.Center;
+			myGymsLabel.Font = UIFont.SystemFontOfSize(25);
+			View.Add( myGymsLabel );
+			
+			yPos += spacing + myGymsLabel.Frame.Height;
 			
 		
 			gymsTableViewController = new GymsTableViewController();

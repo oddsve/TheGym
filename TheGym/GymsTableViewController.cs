@@ -14,11 +14,14 @@ namespace TheGym
 		public override void ViewDidLoad ()
 		{
 			View.BackgroundColor = UIColor.Black;
+			
 			TableView.Delegate = new GymsTableViewDelegate();
 			TableView.DataSource = new GymsTableViewDataSource();
 			
 			base.ViewDidLoad ();
 		}
+		
+		
 	}
 }
 
