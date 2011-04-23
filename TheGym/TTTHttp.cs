@@ -54,60 +54,67 @@ namespace TheGym
 			initailRequest.KeepAlive = true;
 
 
-
-			HttpWebResponse initialResponse = 	(HttpWebResponse)initailRequest.GetResponse();
-			CookieCollection initialCookieCollection = cookies.GetCookies(new Uri("http://brp.netono.se/3t/mesh/index.action"));
-
-			foreach (Cookie cookie in initialCookieCollection)
+			try
 			{
-				cookie.Path = "/";
-				cookies.Add(cookie);
+				HttpWebResponse initialResponse = 	(HttpWebResponse)initailRequest.GetResponse();
+				CookieCollection initialCookieCollection = cookies.GetCookies(new Uri("http://brp.netono.se/3t/mesh/index.action"));
+	
+				foreach (Cookie cookie in initialCookieCollection)
+				{
+					cookie.Path = "/";
+					cookies.Add(cookie);
+				}
+				initialResponse.Close();
+				
+				HttpWebRequest loginRequest; 
+				loginRequest = null;
+				loginRequest = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/login.action");
+	
+				string loginString = "username=" + GymSettingsDataSource.UserName + "&password=" 
+							+ GymSettingsDataSource.Password + "&isSaving=G%E5+videre";
+				
+				byte[] data = Encoding.Default.GetBytes( loginString );
+				loginRequest.ContentLength = data.Length;
+	
+				loginRequest.Method = "POST";
+	
+	
+				loginRequest.CookieContainer = cookies;
+				loginRequest.KeepAlive = true;
+				loginRequest.ContentType = "application/x-www-form-urlencoded";
+				
+				Stream loginStream = null;
+				loginStream  = loginRequest.GetRequestStream();
+				loginStream.Write(data, 0, data.Length);
+	
+				loginStream.Close();
+	
+				
+				HttpWebResponse loginResponse = (HttpWebResponse)loginRequest.GetResponse();
+				initialCookieCollection = cookies.GetCookies( new Uri("http://brp.netono.se/3t/mesh/login.action" ) );
+	
+				foreach (Cookie cookie in initialCookieCollection)
+				{
+					cookie.Path = "/";
+					cookies.Add(cookie);
+				}
+	
+				StreamReader reader = new StreamReader( loginResponse.GetResponseStream());
+				string response = reader.ReadToEnd();
+				
+				loginResponse.Close();
+				reader.Close();
+				
+				findErrors( response );
+				
+				if ( !isError ) 	GymSettingsDataSource.isLogedOn = true;
+				else GymSettingsDataSource.isLogedOn = false;
 			}
-			initialResponse.Close();
-			
-			HttpWebRequest loginRequest; 
-			loginRequest = null;
-			loginRequest = (HttpWebRequest)WebRequest.Create("http://brp.netono.se/3t/mesh/login.action");
-
-			string loginString = "username=" + GymSettingsDataSource.UserName + "&password=" 
-						+ GymSettingsDataSource.Password + "&isSaving=G%E5+videre";
-			
-			byte[] data = Encoding.Default.GetBytes( loginString );
-			loginRequest.ContentLength = data.Length;
-
-			loginRequest.Method = "POST";
-
-
-			loginRequest.CookieContainer = cookies;
-			loginRequest.KeepAlive = true;
-			loginRequest.ContentType = "application/x-www-form-urlencoded";
-			
-			Stream loginStream = null;
-			loginStream  = loginRequest.GetRequestStream();
-			loginStream.Write(data, 0, data.Length);
-
-			loginStream.Close();
-
-			
-			HttpWebResponse loginResponse = (HttpWebResponse)loginRequest.GetResponse();
-			initialCookieCollection = cookies.GetCookies( new Uri("http://brp.netono.se/3t/mesh/login.action" ) );
-
-			foreach (Cookie cookie in initialCookieCollection)
+			catch ( Exception e ) 
 			{
-				cookie.Path = "/";
-				cookies.Add(cookie);
+				isError = true;
+				ErrorMessage = "Du er ikke koblet til Internett";
 			}
-
-			StreamReader reader = new StreamReader( loginResponse.GetResponseStream());
-			string response = reader.ReadToEnd();
-			
-			loginResponse.Close();
-			reader.Close();
-			
-			findErrors( response );
-			
-			if ( !isError ) 	GymSettingsDataSource.isLogedOn = true;
-			else GymSettingsDataSource.isLogedOn = false;
 			
 		}	
 		

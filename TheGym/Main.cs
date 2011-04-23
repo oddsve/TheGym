@@ -36,12 +36,35 @@ namespace TheGym
 			}
 			else TTTHttp.LogOn() ;
 			
+			if ( TTTHttp.isError ) 
+			{
+				UIAlertView alert = new UIAlertView();
+				alert.Title = "Påloggingsfeil";
+				alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
+				alert.AddButton("OK");
+				alert.Show();	
+			}
+			
 			return true;
 		}
 		
 		public override void WillEnterForeground (UIApplication application)
 		{
-			tabBarController.arrangeTabBars();
+			if ( !GymSettingsDataSource.isLogedOn ) 
+			{
+				TTTHttp.LogOn();
+			
+				if ( TTTHttp.isError ) 
+				{
+					UIAlertView alert = new UIAlertView();
+					alert.Title = "Påloggingsfeil";
+					alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
+					alert.AddButton("OK");
+					alert.Show();	
+				}
+			}
+				
+			if ( GymSettingsDataSource.isLogedOn )	tabBarController.arrangeTabBars();
 		}
 
 		public override void OnActivated (UIApplication application)

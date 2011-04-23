@@ -68,7 +68,7 @@ namespace TheGym
 		{
 			
 			base.ViewDidLoad ();
-			arrangeTabBars();
+			if ( GymSettingsDataSource.isLogedOn ) arrangeTabBars();
 		
 			
 		}
