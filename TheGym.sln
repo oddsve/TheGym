@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGym", "TheGym\TheGym.csproj", "{F08D2AD1-62D2-49DD-AC99-5A258B2ADB2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlAgilityPack", "..\HtmlAgilityPack.1.4.0.Source\HtmlAgilityPack\HtmlAgilityPack.csproj", "{193BB801-054F-4729-9D5D-FCE1E32594BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +13,14 @@ Global
 		Release|iPhone = Release|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|iPhone.Build.0 = Release|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{193BB801-054F-4729-9D5D-FCE1E32594BF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{F08D2AD1-62D2-49DD-AC99-5A258B2ADB2B}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{F08D2AD1-62D2-49DD-AC99-5A258B2ADB2B}.Debug|iPhone.Build.0 = Debug|iPhone
 		{F08D2AD1-62D2-49DD-AC99-5A258B2ADB2B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
@@ -21,6 +31,6 @@ Global
 		{F08D2AD1-62D2-49DD-AC99-5A258B2ADB2B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = NavigationControllerSample\TheGym.csproj
+		StartupItem = TheGym\TheGym.csproj
 	EndGlobalSection
 EndGlobal

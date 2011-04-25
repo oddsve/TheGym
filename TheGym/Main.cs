@@ -30,8 +30,9 @@ namespace TheGym
 			
 			window.MakeKeyAndVisible ();
 
-			if ( GymSettingsDataSource.UserName == "" || GymSettingsDataSource.Password == "" )
+			if ( GymSettingsDataSource.UserName == null || GymSettingsDataSource.Password == null )
 			{
+				tabBarController.arrangeTabBars();
 				tabBarController.SelectedIndex = 8;
 			}
 			else TTTHttp.LogOn() ;
@@ -44,6 +45,7 @@ namespace TheGym
 				alert.AddButton("OK");
 				alert.Show();	
 			}
+			else tabBarController.arrangeTabBars();
 			
 			return true;
 		}

@@ -91,7 +91,7 @@ namespace TheGym
 			
 		}
 		
-		public override void ViewDidDisappear (bool animated)
+		public override void ViewWillDisappear (bool animated)
 		{
 			userNameField.ResignFirstResponder();
 			passwordField.ResignFirstResponder();
@@ -109,7 +109,7 @@ namespace TheGym
 				alert.Show();
 			}
 			
-			base.ViewDidDisappear (animated);
+			base.ViewWillDisappear (animated);
 		}			
 		
 

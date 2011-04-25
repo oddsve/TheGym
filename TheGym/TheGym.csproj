@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -80,10 +80,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\iPhoneSimulator\Debug\HtmlAgilityPack.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
@@ -128,5 +124,11 @@
     <Content Include="images\greybutton.png" />
     <Content Include="images\greenbutton.png" />
     <Content Include="images\redbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\HtmlAgilityPack.1.4.0.Source\HtmlAgilityPack\HtmlAgilityPack.csproj">
+      <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
+      <Name>HtmlAgilityPack</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
