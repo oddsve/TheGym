@@ -1,12 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TheGym/Main.cs">
     <Files>
+      <File FileName="../monotouch-samples/TableViewSample/TableViewSample/Editable Table/EditableTableSource.cs" Line="59" Column="4" />
+      <File FileName="../AtTheGym/AtTheGym/GymSettingsDataSource.cs" Line="48" Column="1" />
       <File FileName="../FlightsNorway/MonoTouch/FlightsNorway/AppDelegateIPhone.cs" Line="1" Column="1" />
       <File FileName="../FlightsNorway/MonoTouch/FlightsNorway/MainTabBarController.cs" Line="1" Column="1" />
       <File FileName="../AtTheGym/AtTheGym/TTTHttpSession.cs" Line="183" Column="1" />
       <File FileName="../monotouch-samples/NavigationControllerSample/NavigationControllerSample/NavigationController.cs" Line="1" Column="1" />
-      <File FileName="TheGym/Main.cs" Line="47" Column="43" />
+      <File FileName="TheGym/Main.cs" Line="31" Column="32" />
       <File FileName="TheGym/ScheduleViewController.cs" Line="29" Column="33" />
       <File FileName="TheGym/MainWindow.xib.designer.cs" Line="11" Column="17" />
       <File FileName="TheGym/GymSettingsViewController.cs" Line="110" Column="1" />
@@ -35,8 +37,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="TheGym" expanded="True">
-            <Node name="Main.cs" selected="True" />
+          <Node name="TheGym" expanded="True" selected="True">
             <Node name="MainWindow.xib" expanded="True" />
           </Node>
         </State>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>HtmlAgilityPack.dll</key>
 		<data>
-		Yi0WSdLHAM2biMuOai74GTrpDYM=
+		mDWUS9pAf+1Y9a9za6pItdyCpuA=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
@@ -14,11 +14,15 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
-		OTAv8ePTOuLjTCNhnMw09LsuQAc=
+		z9Z6WTxM7WPjEZFTGCprgIckYzw=
+		</data>
+		<key>NavigationControllerSample</key>
+		<data>
+		DkqfZAsseZzzMQUPYz+K8/nVk4I=
 		</data>
 		<key>NavigationControllerSample.exe</key>
 		<data>
-		XLpxJSwvVGuP9RtJsb6ymJsIK2E=
+		SvTXKNoFaPrmIZ18CQ73DbI86Ek=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -26,15 +30,19 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		NYNu5sbCc8P726GIAKSQmL2T7NU=
+		22mD8fnBXnK5VPhmsgOt3HOQ2rY=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		mhGH8MEMsu67cXnmXuvREcLUZn4=
+		3ZRfRsQTV2Ak8U2H0fgkf8iw5kU=
 		</data>
 		<key>System.dll</key>
 		<data>
-		0H1GltYqdrrrmTp8GU/y6PaSb64=
+		kYmvCtpg2tpF0K+/kwrTP/V3qqI=
+		</data>
+		<key>TheGym.exe</key>
+		<data>
+		qvWETShF8MP4vfxWybSTuyI8r20=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -54,11 +62,11 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		/tgvqvZy7PnqnmNctrjOvu9TNwk=
+		t+PbL2ws22p3vkYtTySeiKQs2U8=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		9f4o7/6VHvGAtZUJM+QK6N8iiqs=
+		6DFoZTflbc46k2MAzE7Yo4Y338k=
 		</data>
 	</dict>
 	<key>rules</key>

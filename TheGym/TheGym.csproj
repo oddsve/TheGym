@@ -8,9 +8,8 @@
     <ProjectGuid>{F08D2AD1-62D2-49DD-AC99-5A258B2ADB2B}</ProjectGuid>
     <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NavigationControllerSample</RootNamespace>
+    <RootNamespace>TheGym</RootNamespace>
     <MainNibFile>MainWindow.nib</MainNibFile>
-    <AssemblyName>NavigationControllerSample</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <MtouchMinimumOS>3.0</MtouchMinimumOS>
   </PropertyGroup>
@@ -29,6 +28,7 @@
     <MtouchArch>ARMv6</MtouchArch>
     <MtouchUseThumb>false</MtouchUseThumb>
     <MtouchUseSGen>false</MtouchUseSGen>
+    <AssemblyName>NavigationControllerSample</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -43,6 +43,7 @@
     <MtouchArch>ARMv6</MtouchArch>
     <MtouchUseThumb>false</MtouchUseThumb>
     <MtouchUseSGen>false</MtouchUseSGen>
+    <AssemblyName>NavigationControllerSample</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -60,6 +61,7 @@
     <MtouchUseThumb>false</MtouchUseThumb>
     <MtouchUseSGen>false</MtouchUseSGen>
     <MtouchI18n />
+    <AssemblyName>TheGym</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -74,6 +76,7 @@
     <MtouchArch>ARMv6</MtouchArch>
     <MtouchUseThumb>false</MtouchUseThumb>
     <MtouchUseSGen>false</MtouchUseSGen>
+    <AssemblyName>TheGym</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

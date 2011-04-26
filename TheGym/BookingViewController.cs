@@ -32,8 +32,10 @@ namespace TheGym
 			else if ( gymClass.booked ) 
 			{
 				bookButton.SetTitle("Avbestill",UIControlState.Normal );
+				bookButton.SetTitle("Avbestiller",UIControlState.Highlighted );
 				bookButton.Enabled = true;
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/redbutton.png" ), UIControlState.Normal );
+				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Highlighted );
 			}
 			else if ( gymClass.fullt ) 
 			{
@@ -44,8 +46,10 @@ namespace TheGym
 			else 
 			{
 				bookButton.SetTitle("Bestill",UIControlState.Normal );
+				bookButton.SetTitle("Bestiller",UIControlState.Highlighted );
 				bookButton.Enabled = true;	
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greenbutton.png" ), UIControlState.Normal );				
+				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Highlighted );
 			}
 		}
 
@@ -55,16 +59,17 @@ namespace TheGym
 			View.BackgroundColor = UIColor.Black;
 			
 			bookButton = new UIButton( new RectangleF(10,100,this.View.Frame.Width-10 ,40) );
+			
+			
+			//bookButton.Frame = ( new RectangleF(10,100,this.View.Frame.Width-10 ,40) );
 			bookButton.BackgroundColor = UIColor.Clear;
 			setButton();
 			
-			bookButton.TouchDown += delegate {
-				
+			bookButton.TouchUpInside += delegate {
 				gymClass.book();
-				setButton();
 				tableView.ReloadData();
 				NavigationController.PopViewControllerAnimated( true );
-					
+			
 			};
 
 			this.View.AddSubview( bookButton );
