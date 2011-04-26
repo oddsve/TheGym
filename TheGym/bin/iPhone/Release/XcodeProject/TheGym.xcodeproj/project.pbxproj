@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E91DE800000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15A34800000000000000000 /* Foundation.framework */; };
+		22A2F7800000000000000000 /* System.dll.mdb in Resources */ = {isa = PBXBuildFile; fileRef = 5E24EFC00000000000000000 /* System.dll.mdb */; };
+		28FF5B000000000000000000 /* System.Core.dll in Resources */ = {isa = PBXBuildFile; fileRef = 9F0EA2800000000000000000 /* System.Core.dll */; };
+		2D5060000000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74800E800000000000000000 /* UIKit.framework */; };
+		2F5BBE800000000000000000 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 44F639800000000000000000 /* images */; };
+		3A4EB7000000000000000000 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A16D800000000000000000 /* CFNetwork.framework */; };
+		3E5FD0000000000000000000 /* System.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 163D10000000000000000000 /* System.dll.s */; };
+		44BC33800000000000000000 /* System.Xml.dll.mdb in Resources */ = {isa = PBXBuildFile; fileRef = 48A9E7400000000000000000 /* System.Xml.dll.mdb */; };
+		4B1897000000000000000000 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E10F000000000000000000 /* MainWindow.xib */; };
+		5A1CA8800000000000000000 /* System.dll in Resources */ = {isa = PBXBuildFile; fileRef = 549A5A800000000000000000 /* System.dll */; };
+		60790C000000000000000000 /* System.Xml.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 95840D400000000000000000 /* System.Xml.dll.s */; };
+		66D56F800000000000000000 /* HtmlAgilityPack.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 81E966C00000000000000000 /* HtmlAgilityPack.dll.s */; };
+		6E61F0000000000000000000 /* TheGym.exe in Resources */ = {isa = PBXBuildFile; fileRef = B7B7DCC00000000000000000 /* TheGym.exe */; };
+		75D981000000000000000000 /* monotouch.dll.mdb in Resources */ = {isa = PBXBuildFile; fileRef = A7D0E4000000000000000000 /* monotouch.dll.mdb */; };
+		7C35E4800000000000000000 /* System.Xml.dll in Resources */ = {isa = PBXBuildFile; fileRef = 8F27A9C00000000000000000 /* System.Xml.dll */; };
+		829248000000000000000000 /* HtmlAgilityPack.dll in Resources */ = {isa = PBXBuildFile; fileRef = D1F1BE800000000000000000 /* HtmlAgilityPack.dll */; };
+		919659800000000000000000 /* monotouch.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = F7D93BC00000000000000000 /* monotouch.dll.s */; };
+		97F2BD000000000000000000 /* mscorlib.dll.mdb in Resources */ = {isa = PBXBuildFile; fileRef = E25E33400000000000000000 /* mscorlib.dll.mdb */; };
+		9E4F20800000000000000000 /* Mono.Security.dll.mdb in Resources */ = {isa = PBXBuildFile; fileRef = CEC38CC00000000000000000 /* Mono.Security.dll.mdb */; };
+		AD5332000000000000000000 /* monotouch.dll in Resources */ = {isa = PBXBuildFile; fileRef = 9B181D000000000000000000 /* monotouch.dll */; };
+		B3AF95800000000000000000 /* mscorlib.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 1AD55F000000000000000000 /* mscorlib.dll.s */; };
+		BA0BF9000000000000000000 /* Mono.Security.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 6BA60A800000000000000000 /* Mono.Security.dll.s */; };
+		C9100A800000000000000000 /* registrar.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B361C00000000000000000 /* registrar.m */; };
+		CB5B55000000000000000000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846707400000000000000000 /* main.m */; };
+		CF6C6E000000000000000000 /* mscorlib.dll in Resources */ = {isa = PBXBuildFile; fileRef = 6ADDB6C00000000000000000 /* mscorlib.dll */; };
+		D42828000000000000000000 /* System.Core.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = F8A18F800000000000000000 /* System.Core.dll.s */; };
+		D5C8D1800000000000000000 /* Mono.Security.dll in Resources */ = {isa = PBXBuildFile; fileRef = EE4EBC000000000000000000 /* Mono.Security.dll */; };
+		E7182D800000000000000000 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A5E8800000000000000000 /* AudioToolbox.framework */; };
+		EB2946800000000000000000 /* TheGym.exe.s in Sources */ = {isa = PBXBuildFile; fileRef = BAE60E800000000000000000 /* TheGym.exe.s */; };
+		F185AA000000000000000000 /* System.Core.dll.mdb in Resources */ = {isa = PBXBuildFile; fileRef = 5890E0000000000000000000 /* System.Core.dll.mdb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		163D10000000000000000000 /* System.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = System.dll.s; sourceTree = "<group>"; };
+		1AD55F000000000000000000 /* mscorlib.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = mscorlib.dll.s; sourceTree = "<group>"; };
+		27A5E8800000000000000000 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		31E10F000000000000000000 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		44B361C00000000000000000 /* registrar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = registrar.m; sourceTree = "<group>"; };
+		44F639800000000000000000 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		48A9E7400000000000000000 /* System.Xml.dll.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = System.Xml.dll.mdb; sourceTree = "<group>"; };
+		549A5A800000000000000000 /* System.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = System.dll; sourceTree = "<group>"; };
+		5890E0000000000000000000 /* System.Core.dll.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = System.Core.dll.mdb; sourceTree = "<group>"; };
+		5E24EFC00000000000000000 /* System.dll.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = System.dll.mdb; sourceTree = "<group>"; };
+		6ADDB6C00000000000000000 /* mscorlib.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = mscorlib.dll; sourceTree = "<group>"; };
+		6BA60A800000000000000000 /* Mono.Security.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = Mono.Security.dll.s; sourceTree = "<group>"; };
+		74800E800000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		81E966C00000000000000000 /* HtmlAgilityPack.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = HtmlAgilityPack.dll.s; sourceTree = "<group>"; };
+		846707400000000000000000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F27A9C00000000000000000 /* System.Xml.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = System.Xml.dll; sourceTree = "<group>"; };
+		95840D400000000000000000 /* System.Xml.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = System.Xml.dll.s; sourceTree = "<group>"; };
+		9B181D000000000000000000 /* monotouch.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = monotouch.dll; sourceTree = "<group>"; };
+		9F0EA2800000000000000000 /* System.Core.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = System.Core.dll; sourceTree = "<group>"; };
+		A7D0E4000000000000000000 /* monotouch.dll.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = monotouch.dll.mdb; sourceTree = "<group>"; };
+		B4A16D800000000000000000 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B7B7DCC00000000000000000 /* TheGym.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheGym.exe; sourceTree = "<group>"; };
+		BAE60E800000000000000000 /* TheGym.exe.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = TheGym.exe.s; sourceTree = "<group>"; };
+		C15A34800000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEC38CC00000000000000000 /* Mono.Security.dll.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mono.Security.dll.mdb; sourceTree = "<group>"; };
+		D1F1BE800000000000000000 /* HtmlAgilityPack.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = HtmlAgilityPack.dll; sourceTree = "<group>"; };
+		DE7F70400000000000000000 /* TheGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = TheGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25E33400000000000000000 /* mscorlib.dll.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = mscorlib.dll.mdb; sourceTree = "<group>"; };
+		EE4EBC000000000000000000 /* Mono.Security.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mono.Security.dll; sourceTree = "<group>"; };
+		F7D93BC00000000000000000 /* monotouch.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = monotouch.dll.s; sourceTree = "<group>"; };
+		F8A18F800000000000000000 /* System.Core.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = System.Core.dll.s; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA5F66800000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4EB7000000000000000000 /* CFNetwork.framework in Frameworks */,
+				1E91DE800000000000000000 /* Foundation.framework in Frameworks */,
+				2D5060000000000000000000 /* UIKit.framework in Frameworks */,
+				E7182D800000000000000000 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D917800000000000000000 /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F70400000000000000000 /* TheGym.app */,
+				B4A16D800000000000000000 /* CFNetwork.framework */,
+				C15A34800000000000000000 /* Foundation.framework */,
+				74800E800000000000000000 /* UIKit.framework */,
+				27A5E8800000000000000000 /* AudioToolbox.framework */,
+				846707400000000000000000 /* main.m */,
+				44B361C00000000000000000 /* registrar.m */,
+				9B181D000000000000000000 /* monotouch.dll */,
+				F7D93BC00000000000000000 /* monotouch.dll.s */,
+				A7D0E4000000000000000000 /* monotouch.dll.mdb */,
+				549A5A800000000000000000 /* System.dll */,
+				163D10000000000000000000 /* System.dll.s */,
+				5E24EFC00000000000000000 /* System.dll.mdb */,
+				B7B7DCC00000000000000000 /* TheGym.exe */,
+				BAE60E800000000000000000 /* TheGym.exe.s */,
+				6ADDB6C00000000000000000 /* mscorlib.dll */,
+				1AD55F000000000000000000 /* mscorlib.dll.s */,
+				E25E33400000000000000000 /* mscorlib.dll.mdb */,
+				8F27A9C00000000000000000 /* System.Xml.dll */,
+				95840D400000000000000000 /* System.Xml.dll.s */,
+				48A9E7400000000000000000 /* System.Xml.dll.mdb */,
+				9F0EA2800000000000000000 /* System.Core.dll */,
+				F8A18F800000000000000000 /* System.Core.dll.s */,
+				5890E0000000000000000000 /* System.Core.dll.mdb */,
+				EE4EBC000000000000000000 /* Mono.Security.dll */,
+				6BA60A800000000000000000 /* Mono.Security.dll.s */,
+				CEC38CC00000000000000000 /* Mono.Security.dll.mdb */,
+				D1F1BE800000000000000000 /* HtmlAgilityPack.dll */,
+				81E966C00000000000000000 /* HtmlAgilityPack.dll.s */,
+				31E10F000000000000000000 /* MainWindow.xib */,
+				44F639800000000000000000 /* images */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91A54A400000000000000000 /* TheGym */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6C04800000000000000000 /* Build configuration list for PBXNativeTarget "TheGym" */;
+			buildPhases = (
+				DA5F66800000000000000000 /* Frameworks */,
+				8728DD000000000000000000 /* Sources */,
+				A2E5B5800000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheGym;
+			productName = TheGym;
+			productReference = DE7F70400000000000000000 /* TheGym.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE6669000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 33F253800000000000000000 /* Build configuration list for PBXProject "TheGym" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 11D917800000000000000000 /* CustomTemplate */;
+			productRefGroup = 11D917800000000000000000 /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91A54A400000000000000000 /* TheGym */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2E5B5800000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5332000000000000000000 /* monotouch.dll in Resources */,
+				75D981000000000000000000 /* monotouch.dll.mdb in Resources */,
+				5A1CA8800000000000000000 /* System.dll in Resources */,
+				22A2F7800000000000000000 /* System.dll.mdb in Resources */,
+				6E61F0000000000000000000 /* TheGym.exe in Resources */,
+				CF6C6E000000000000000000 /* mscorlib.dll in Resources */,
+				97F2BD000000000000000000 /* mscorlib.dll.mdb in Resources */,
+				7C35E4800000000000000000 /* System.Xml.dll in Resources */,
+				44BC33800000000000000000 /* System.Xml.dll.mdb in Resources */,
+				28FF5B000000000000000000 /* System.Core.dll in Resources */,
+				F185AA000000000000000000 /* System.Core.dll.mdb in Resources */,
+				D5C8D1800000000000000000 /* Mono.Security.dll in Resources */,
+				9E4F20800000000000000000 /* Mono.Security.dll.mdb in Resources */,
+				829248000000000000000000 /* HtmlAgilityPack.dll in Resources */,
+				4B1897000000000000000000 /* MainWindow.xib in Resources */,
+				2F5BBE800000000000000000 /* images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8728DD000000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5B55000000000000000000 /* main.m in Sources */,
+				C9100A800000000000000000 /* registrar.m in Sources */,
+				919659800000000000000000 /* monotouch.dll.s in Sources */,
+				3E5FD0000000000000000000 /* System.dll.s in Sources */,
+				EB2946800000000000000000 /* TheGym.exe.s in Sources */,
+				B3AF95800000000000000000 /* mscorlib.dll.s in Sources */,
+				60790C000000000000000000 /* System.Xml.dll.s in Sources */,
+				D42828000000000000000000 /* System.Core.dll.s in Sources */,
+				BA0BF9000000000000000000 /* Mono.Security.dll.s in Sources */,
+				66D56F800000000000000000 /* HtmlAgilityPack.dll.s in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		18357B000000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = TheGym;
+			};
+			name = Debug;
+		};
+		E0BBCA000000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[sdk=iphoneos*][arch=*]" = "-I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/";
+				"OTHER_CFLAGS[sdk=iphonesimulator*][arch=*]" = "-I/Developer/MonoTouch/SDKs/MonoTouch.iphonesimulator$(MACOSX_DEPLOYMENT_TARGET).sdk/usr/include/";
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
+					"-L/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/lib/",
+					"-lz",
+					"-u",
+					_catch_exception_raise,
+					"-u",
+					_CreateZStream,
+					"-u",
+					_CloseZStream,
+					"-u",
+					_Flush,
+					"-u",
+					_ReadZStream,
+					"-u",
+					_WriteZStream,
+					"-lmonotouch",
+					"-liconv",
+					"-lmono-2.0",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
+					"-L/Developer/MonoTouch/SDKs/MonoTouch.iphonesimulator$(MACOSX_DEPLOYMENT_TARGET).sdk/usr/lib/",
+					"-lz",
+					"-u",
+					_catch_exception_raise,
+					"-u",
+					_CreateZStream,
+					"-u",
+					_CloseZStream,
+					"-u",
+					_Flush,
+					"-u",
+					_ReadZStream,
+					"-u",
+					_WriteZStream,
+					"-lmonotouch",
+					"-liconv",
+					"-lmono-2.0",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.2;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33F253800000000000000000 /* Build configuration list for PBXProject "TheGym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BBCA000000000000000000 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6B6C04800000000000000000 /* Build configuration list for PBXNativeTarget "TheGym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18357B000000000000000000 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE6669000000000000000000 /* Project object */;
+}
