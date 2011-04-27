@@ -12,6 +12,7 @@ namespace TheGym
 		
 		private DateTime scheduleDate;
 		private bool myBookings;
+		private DateTime reloadTimeStamp;
 		
 		
 		public List<GymClass> Gyms
@@ -31,7 +32,7 @@ namespace TheGym
 		}
 		 
 		
-		public void ReloadData ()
+		public void ReloadData ( bool forse )
 		{
 			if ( myBookings ) 
 			{
@@ -46,7 +47,12 @@ namespace TheGym
 					this._gyms = TTTBookings.getMyBookings();
 				}
 			}
-			else this._gyms = TTTSchedules.getSchedules( scheduleDate );
+			else 
+				if ( forse || reloadTimeStamp == null || reloadTimeStamp.AddMinutes(1) < DateTime.Now )
+				{
+					this._gyms = TTTSchedules.getSchedules( scheduleDate );
+					reloadTimeStamp = DateTime.Now;
+				}
 			
 		}
 		
