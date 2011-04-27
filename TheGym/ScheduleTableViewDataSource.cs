@@ -13,6 +13,7 @@ namespace TheGym
 		private DateTime scheduleDate;
 		private bool myBookings;
 		private DateTime reloadTimeStamp;
+		private string gymKeys;
 		
 		
 		public List<GymClass> Gyms
@@ -21,8 +22,7 @@ namespace TheGym
 			set { this._gyms = value; }
 		}
 		
-		
-		
+
 		
 		public ScheduleTableViewDataSource ( DateTime scheduleDate, bool myBookings  )
 		{
@@ -48,8 +48,11 @@ namespace TheGym
 				}
 			}
 			else 
-				if ( forse || reloadTimeStamp == null || reloadTimeStamp.AddMinutes(1) < DateTime.Now )
+				if ( forse 
+				    || gymKeys != GymSettingsDataSource.gymKeyString 
+				    || reloadTimeStamp.AddMinutes(1) < DateTime.Now )
 				{
+					gymKeys = GymSettingsDataSource.gymKeyString;
 					this._gyms = TTTSchedules.getSchedules( scheduleDate );
 					reloadTimeStamp = DateTime.Now;
 				}

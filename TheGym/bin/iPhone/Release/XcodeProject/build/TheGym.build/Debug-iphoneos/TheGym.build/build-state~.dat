@@ -1,1029 +1,0 @@
-TTheGym
-v7
-r0
-t325541955.522451
-cCheck dependencies
-cCpResource build/Debug-iphoneos/TheGym.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/Info.plist Info.plist
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/main.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/registrar.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/monotouch.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym.exe.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/mscorlib.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Xml.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Core.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/Mono.Security.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/HtmlAgilityPack.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/main.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/registrar.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/monotouch.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym.exe.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/mscorlib.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Xml.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Core.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/Mono.Security.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/HtmlAgilityPack.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-cCpResource build/Debug-iphoneos/TheGym.app/monotouch.dll monotouch.dll
-cCpResource build/Debug-iphoneos/TheGym.app/monotouch.dll.mdb monotouch.dll.mdb
-cCpResource build/Debug-iphoneos/TheGym.app/System.dll System.dll
-cCpResource build/Debug-iphoneos/TheGym.app/System.dll.mdb System.dll.mdb
-cCpResource build/Debug-iphoneos/TheGym.app/TheGym.exe TheGym.exe
-cCpResource build/Debug-iphoneos/TheGym.app/mscorlib.dll mscorlib.dll
-cCpResource build/Debug-iphoneos/TheGym.app/mscorlib.dll.mdb mscorlib.dll.mdb
-cCpResource build/Debug-iphoneos/TheGym.app/System.Xml.dll System.Xml.dll
-cCpResource build/Debug-iphoneos/TheGym.app/System.Xml.dll.mdb System.Xml.dll.mdb
-cCpResource build/Debug-iphoneos/TheGym.app/System.Core.dll System.Core.dll
-cCpResource build/Debug-iphoneos/TheGym.app/System.Core.dll.mdb System.Core.dll.mdb
-cCpResource build/Debug-iphoneos/TheGym.app/Mono.Security.dll Mono.Security.dll
-cCpResource build/Debug-iphoneos/TheGym.app/Mono.Security.dll.mdb Mono.Security.dll.mdb
-cCpResource build/Debug-iphoneos/TheGym.app/HtmlAgilityPack.dll HtmlAgilityPack.dll
-cCompileXIB /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/MainWindow.xib
-cCpResource build/Debug-iphoneos/TheGym.app/images images
-cProcessProductPackaging "/Users/Oddis/Library/MobileDevice/Provisioning Profiles/949EA698-302F-49AD-96AF-D70E14D33C00.mobileprovision" /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/embedded.mobileprovision
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym.xcent
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
-c000000004CC7DC9E0000000000000110
-t1288166558
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-c000000004CB3DFCF00000000000001A7
-t1286856655
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-c000000004CB3DFCF00000000000001E5
-t1286856655
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004CC10EF400000000003B8CB0
-t1287720692
-s3902640
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
-c000000004CC10EB60000000000000A23
-t1287720630
-s2595
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c000000004CC10EEE00000000002C9710
-t1287720686
-s2922256
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC10F4700000000003E1F20
-t1287720775
-s4071200
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC11AE60000000000000AA1
-t1287723750
-s2721
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC11B750000000000C769F0
-t1287723893
-s13068784
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/arpa/inet.h
-c000000004CB3E4790000000000001533
-t1286857849
-s5427
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/dlfcn.h
-c000000004CC104810000000000000B1C
-t1287718017
-s2844
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/fcntl.h
-c000000004CB3E4B800000000000003EA
-t1286857912
-s1002
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/netinet/in.h
-c000000004CBFACDD0000000000005462
-t1287630045
-s21602
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/objc/objc.h
-c000000004CC1098E0000000000000A2F
-t1287719310
-s2607
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/objc/runtime.h
-c000000004CC1098E00000000000053F9
-t1287719310
-s21497
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/signal.h
-c000000004CB3E4B800000000000014F0
-t1286857912
-s5360
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/sys/mman.h
-c000000004CBFACD700000000000020EC
-t1287630039
-s8428
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/sys/socket.h
-c000000004CBFACD80000000000005A69
-t1287630040
-s23145
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/sys/types.h
-c000000004CBFACD90000000000002905
-t1287630041
-s10501
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/zlib.h
-c000000004CC1053F00000000000102A5
-t1287718207
-s66213
-
-N/Users/Oddis/Library/MobileDevice/Provisioning Profiles/949EA698-302F-49AD-96AF-D70E14D33C00.mobileprovision
-c000000004DB5F7280000000000001C48
-t1303770920
-s7240
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll
-c000000004DB7278A0000000000021800
-t1303848842
-s137216
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/MainWindow.xib
-c000000004DB727990000000000001D2F
-t1303848857
-s7471
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll
-c000000004DB728A00000000000028A00
-t1303849120
-s166400
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.mdb
-c000000004DB728A0000000000000F41E
-t1303849120
-s62494
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll
-c000000004DB728A00000000000001800
-t1303849120
-s6144
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.mdb
-c000000004DB728A00000000000000132
-t1303849120
-s306
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll
-c000000004DB7289F00000000000C2600
-t1303849119
-s796160
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.mdb
-c000000004DB728A0000000000004148E
-t1303849120
-s267406
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll
-c000000004DB7289E0000000000075A00
-t1303849118
-s481792
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.mdb
-c000000004DB7289E0000000000020980
-t1303849118
-s133504
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe
-c000000004DB728960000000000006200
-t1303849110
-s25088
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app.dSYM
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/HtmlAgilityPack.dll
-t1303849154
-s137216
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/Info.plist
-t1303849153
-s765
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/MainWindow.nib
-t1303849155
-s1491
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/Mono.Security.dll
-t1303849154
-s166400
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/Mono.Security.dll.mdb
-t1303849154
-s62494
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/PkgInfo
-t1303849153
-s8
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/ResourceRules.plist
-t1303849153
-s485
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/System.Core.dll
-t1303849154
-s6144
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/System.Core.dll.mdb
-t1303849154
-s306
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/System.Xml.dll
-t1303849154
-s796160
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/System.Xml.dll.mdb
-t1303849154
-s267406
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/System.dll
-t1303849154
-s481792
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/System.dll.mdb
-t1303849154
-s133504
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/TheGym
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/TheGym.exe
-t1303849154
-s25088
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/embedded.mobileprovision
-t1303849155
-s7240
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/images
-t1303849155
-s170
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/monotouch.dll
-t1303849154
-s71168
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/monotouch.dll.mdb
-t1303849154
-s24625
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/mscorlib.dll
-t1303849154
-s1051136
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/mscorlib.dll.mdb
-t1303849154
-s346183
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/HtmlAgilityPack.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/Mono.Security.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Core.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Xml.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym.LinkFileList
-c000000004DB728C100000000000005E9
-t1303849153
-s1513
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym.exe.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/main.o
-t1303849154
-s26376
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/monotouch.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/mscorlib.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/registrar.o
-t1303849154
-s15792
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/HtmlAgilityPack.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/Mono.Security.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Core.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Xml.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym.LinkFileList
-c000000004DB728C100000000000005E9
-t1303849153
-s1513
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym.exe.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/main.o
-t1303849154
-s26296
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/monotouch.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/mscorlib.dll.o
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/registrar.o
-t1303849154
-s15776
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym.xcent
-t1303849155
-s418
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/images
-c000000004DB728A500000000000000AA
-t1303849125
-s170
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m
-c000000004DB728A5000000000001DFF9
-t1303849125
-s122873
-i<mono/jit/jit.h>
-i<mono/metadata/assembly.h>
-i<mono/metadata/mono-config.h>
-i<mono/metadata/mono-debug.h>
-i<monotouch/gc.h>
-i<monotouch/monotouch.h>
-i<UIKit/UIKit.h>
-i<zlib.h>
-i<AudioToolbox/AudioToolbox.h>
-i<fcntl.h>
-i<arpa/inet.h>
-i<sys/types.h>
-i<sys/socket.h>
-i<netinet/in.h>
-i<dlfcn.h>
-i<signal.h>
-i<sys/mman.h>
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll
-c000000004DB7289E0000000000011600
-t1303849118
-s71168
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.mdb
-c000000004DB7289E0000000000006031
-t1303849118
-s24625
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll
-c000000004DB7289F0000000000100A00
-t1303849119
-s1051136
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.mdb
-c000000004DB7289F0000000000054847
-t1303849119
-s346183
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m
-c000000004DB728A500000000000024CE
-t1303849125
-s9422
-i<monotouch/monotouch.h>
-i<objc/objc.h>
-i<objc/runtime.h>
-
-NInfo.plist
-c000000004DB728A50000000000000324
-t1303849125
-s804
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies325541953#325541953#0(0"0(0#1#0"3343187568374212096#0"0#
-
-CCodeSign /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app
-r0
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/HtmlAgilityPack.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.305509
-e325541954.319583
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/HtmlAgilityPack.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@97"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s325541954#325541954#0(388"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#89"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s8604433056#2003"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/HtmlAgilityPack.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/Mono.Security.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.293335
-e325541954.305387
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/Mono.Security.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@95"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s325541954#325541954#0(386"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#87"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s8603940000#1999"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/Mono.Security.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Core.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.282648
-e325541954.293230
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Core.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@93"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s325541954#325541954#0(384"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#85"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s8598926784#1995"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Core.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Xml.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.272498
-e325541954.282549
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Xml.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@92"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s325541954#325541954#0(383"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#84"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s8600357184#1993"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.Xml.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.241821
-e325541954.252256
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@88"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s325541954#325541954#0(379"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#80"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s8604471520#1985"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/System.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym.exe.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.252361
-e325541954.261476
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym.exe.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@88"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s325541954#325541954#0(379"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#80"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s8603729248#1985"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym.exe.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/main.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s325541953.567586
-e325541954.470757
-r1
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/main.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h:16,
-o                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:14:
-o/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h:117:1: warning: "ABS" redefined
-oIn file included from /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:8,
-o                 from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h:1,
-o                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:13:
-o/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:320:1: warning: this is the location of the previous definition
-o/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m: In function 'main':
-o/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1831: warning: implicit declaration of function 'chdir'
-o/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1815: warning: unused variable 'pool'
-lSLF07#2@82"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541953#325541954#0(1220"In file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h:16,                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:14:/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h:117:1: warning: "ABS" redefinedIn file included from /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:8,                 from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h:1,                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:13:/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:320:1: warning: this is the location of the previous definition/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m: In function 'main':/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1831: warning: implicit declaration of function 'chdir'/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1815: warning: unused variable 'pool'4(22@15""ABS" redefined325541954#210#100#3(7@96"In file included from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541954#18446744073709551615#0#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#14#0#14#0#0"0(7@104"In file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h325541954#18446744073709551615#0#0(6@82"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h323323014#16#0#16#0#0"0(13@86""ABS" redefined in /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h325541954#18446744073709551615#0#0(6@67"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h323319708#117#0#117#0#0"0(6@67"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h323319708#117#0#117#0#13""*" redefined0(22@47"This is the location of the previous definition325541954#675#205#4(7@96"In file included from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541954#18446744073709551615#0#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#13#0#13#0#0"0(7@97"In file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h325541954#18446744073709551615#0#0(6@75"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h323323014#1#0#1#0#0"0(7@159"In file included from /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h325541954#18446744073709551615#0#0(6@137"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h309413532#8#0#8#0#0"0(13@191"This is the location of the previous definition in /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h325541954#18446744073709551615#0#0(6@140"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h309413532#320#0#320#0#0"0(6@140"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h309413532#320#0#320#0#47"this is the location of the previous definition0(22@40"Implicit declaration of function 'chdir'325541954#976#131#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#1831#0#1831#0#36"implicit declaration of function '*'0(22@22"Unused variable 'pool'325541954#1107#113#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#1815#0#1815#0#19"unused variable '*'0(0#0#74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m8603273056#1975"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/main.o0#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/monotouch.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.232529
-e325541954.241711
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/monotouch.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@91"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s325541954#325541954#0(382"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#83"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s8600076736#1991"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/monotouch.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/mscorlib.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s normal armv6 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.261615
-e325541954.272372
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/mscorlib.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s
-xnormal
-xarmv6
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@90"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s325541954#325541954#0(381"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#82"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s8602906304#1989"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/mscorlib.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/registrar.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s325541953.568782
-e325541954.232421
-r1
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/registrar.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@87"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m325541953#325541954#0(0"0(0#0#79"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m8602697472#1985"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv6 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/registrar.o0#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/HtmlAgilityPack.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.864060
-e325541954.874275
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/HtmlAgilityPack.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@97"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s325541954#325541954#0(388"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#89"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s8602731648#2003"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/HtmlAgilityPack.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/Mono.Security.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.861630
-e325541954.872422
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/Mono.Security.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@95"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s325541954#325541954#0(386"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#87"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s8604269696#1999"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/Mono.Security.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Core.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.850694
-e325541954.861521
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Core.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@93"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s325541954#325541954#0(384"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#85"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s8603140608#1995"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Core.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Xml.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.838126
-e325541954.850591
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Xml.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@92"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s325541954#325541954#0(383"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#84"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s8603734176#1993"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.Xml.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.795540
-e325541954.807929
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@88"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s325541954#325541954#0(379"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#80"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s8601431776#1985"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/System.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym.exe.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.808029
-e325541954.825713
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym.exe.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@88"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s325541954#325541954#0(379"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#80"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s8600522880#1985"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym.exe.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/main.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s325541954.319691
-e325541954.863955
-r1
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/main.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h:16,
-o                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:14:
-o/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h:117:1: warning: "ABS" redefined
-oIn file included from /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:8,
-o                 from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h:1,
-o                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:13:
-o/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:320:1: warning: this is the location of the previous definition
-o/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m: In function 'main':
-o/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1831: warning: implicit declaration of function 'chdir'
-o/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1815: warning: unused variable 'pool'
-lSLF07#2@82"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541954#325541954#0(1220"In file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h:16,                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:14:/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h:117:1: warning: "ABS" redefinedIn file included from /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:8,                 from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h:1,                 from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:13:/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h:320:1: warning: this is the location of the previous definition/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m: In function 'main':/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1831: warning: implicit declaration of function 'chdir'/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m:1815: warning: unused variable 'pool'4(22@15""ABS" redefined325541954#210#100#3(7@96"In file included from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541954#18446744073709551615#0#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#14#0#14#0#0"0(7@104"In file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h325541954#18446744073709551615#0#0(6@82"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/monotouch.h323323014#16#0#16#0#0"0(13@86""ABS" redefined in /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h325541954#18446744073709551615#0#0(6@67"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h323319708#117#0#117#0#0"0(6@67"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/glib.h323319708#117#0#117#0#13""*" redefined0(22@47"This is the location of the previous definition325541954#675#205#4(7@96"In file included from /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541954#18446744073709551615#0#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#13#0#13#0#0"0(7@97"In file included from /Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h325541954#18446744073709551615#0#0(6@75"/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/monotouch/gc.h323323014#1#0#1#0#0"0(7@159"In file included from /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h325541954#18446744073709551615#0#0(6@137"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h309413532#8#0#8#0#0"0(13@191"This is the location of the previous definition in /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h325541954#18446744073709551615#0#0(6@140"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h309413532#320#0#320#0#0"0(6@140"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h309413532#320#0#320#0#47"this is the location of the previous definition0(22@40"Implicit declaration of function 'chdir'325541954#976#131#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#1831#0#1831#0#36"implicit declaration of function '*'0(22@22"Unused variable 'pool'325541954#1107#113#0(6@74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m325541925#1815#0#1815#0#19"unused variable '*'0(0#0#74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m8600956992#1975"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/main.m -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/main.o0#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/monotouch.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.786080
-e325541954.795437
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/monotouch.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@91"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s325541954#325541954#0(382"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#83"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s8603353888#1991"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/monotouch.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/mscorlib.dll.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s normal armv7 assembler-with-cpp com.apple.compilers.gcc.4_2
-s325541954.825812
-e325541954.838020
-r0
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/mscorlib.dll.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s
-xnormal
-xarmv7
-xassembler-with-cpp
-xcom.apple.compilers.gcc.4_2
-oarm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s: No such file or directory
-oarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effect
-oarm-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@90"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s325541954#325541954#0(381"arm-apple-darwin10-gcc-4.2.1: /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s: No such file or directoryarm-apple-darwin10-gcc-4.2.1: warning: '-x assembler-with-cpp' after last input file has no effectarm-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1325541954#18446744073709551615#0#0(1@0"0(0#0#82"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s8599271712#1989"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x assembler-with-cpp -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.s -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/mscorlib.dll.o1#
-
-CCompileC build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/registrar.o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s325541954.470872
-e325541954.785973
-r1
-xCompileC
-xbuild/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/registrar.o
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@87"Compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m325541954#325541954#0(0"0(0#0#79"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m3417213339966598656#1985"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.0 -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-generated-files.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-own-target-headers.hmap -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-all-target-headers.hmap -iquote /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym-project-headers.hmap -F/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/include -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources/armv7 -I/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/DerivedSources -I/Developer/MonoTouch/SDKs/MonoTouch.iphoneos.sdk/usr/include/ -c /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/registrar.m -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/registrar.o0#
-
-CCompileXIB /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/MainWindow.xib
-s325541954.937416
-e325541955.518745
-r1
-xCompileXIB
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib325541954#325541955#0(0"0(0#0#82"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/MainWindow.xib8600820448#684"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/MainWindow.nib /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/HtmlAgilityPack.dll HtmlAgilityPack.dll
-s325541954.933168
-e325541954.969727
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/HtmlAgilityPack.dll
-xHtmlAgilityPack.dll
-lSLF07#2@24"Copy HtmlAgilityPack.dll325541954#325541954#0(0"0(0#0#87"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll8601280448#605"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/HtmlAgilityPack.dll /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/Mono.Security.dll Mono.Security.dll
-s325541954.913472
-e325541954.989872
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/Mono.Security.dll
-xMono.Security.dll
-lSLF07#2@22"Copy Mono.Security.dll325541954#325541954#0(0"0(0#0#85"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll8603232352#603"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/Mono.Security.dll.mdb Mono.Security.dll.mdb
-s325541954.916254
-e325541954.962289
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/Mono.Security.dll.mdb
-xMono.Security.dll.mdb
-lSLF07#2@26"Copy Mono.Security.dll.mdb325541954#325541954#0(0"0(0#0#89"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.mdb8603123072#607"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Mono.Security.dll.mdb /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-s325541953.455945
-e325541953.567470
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist325541953#325541953#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist4913266056747185152#607"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/System.Core.dll System.Core.dll
-s325541954.905439
-e325541954.960525
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/System.Core.dll
-xSystem.Core.dll
-lSLF07#2@20"Copy System.Core.dll325541954#325541954#0(0"0(0#0#83"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll8603948320#601"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/System.Core.dll.mdb System.Core.dll.mdb
-s325541954.910721
-e325541954.965258
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/System.Core.dll.mdb
-xSystem.Core.dll.mdb
-lSLF07#2@24"Copy System.Core.dll.mdb325541954#325541954#0(0"0(0#0#87"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.mdb8603482912#605"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Core.dll.mdb /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/System.Xml.dll System.Xml.dll
-s325541954.898436
-e325541954.937330
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/System.Xml.dll
-xSystem.Xml.dll
-lSLF07#2@19"Copy System.Xml.dll325541954#325541954#0(0"0(0#0#82"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll8605877280#600"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/System.Xml.dll.mdb System.Xml.dll.mdb
-s325541954.902130
-e325541954.993291
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/System.Xml.dll.mdb
-xSystem.Xml.dll.mdb
-lSLF07#2@23"Copy System.Xml.dll.mdb325541954#325541954#0(0"0(0#0#86"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.mdb8604317440#604"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.Xml.dll.mdb /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/System.dll System.dll
-s325541954.876162
-e325541954.910511
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/System.dll
-xSystem.dll
-lSLF07#2@15"Copy System.dll325541954#325541954#0(0"0(0#0#78"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll8606278208#596"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/System.dll.mdb System.dll.mdb
-s325541954.877606
-e325541954.910639
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/System.dll.mdb
-xSystem.dll.mdb
-lSLF07#2@19"Copy System.dll.mdb325541954#325541954#0(0"0(0#0#82"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.mdb8599856032#600"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/System.dll.mdb /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/TheGym.exe TheGym.exe
-s325541954.882894
-e325541954.937178
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/TheGym.exe
-xTheGym.exe
-lSLF07#2@15"Copy TheGym.exe325541954#325541954#0(0"0(0#0#78"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe8603520352#596"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/TheGym.exe /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/images images
-s325541954.993393
-e325541955.001821
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/images
-ximages
-lSLF07#2@11"Copy images325541954#325541955#0(0"0(0#0#74"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/images8597801792#592"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/images /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/monotouch.dll monotouch.dll
-s325541954.874388
-e325541954.933065
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/monotouch.dll
-xmonotouch.dll
-lSLF07#2@18"Copy monotouch.dll325541954#325541954#0(0"0(0#0#81"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll8600774464#599"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/monotouch.dll.mdb monotouch.dll.mdb
-s325541954.875264
-e325541954.910346
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/monotouch.dll.mdb
-xmonotouch.dll.mdb
-lSLF07#2@22"Copy monotouch.dll.mdb325541954#325541954#0(0"0(0#0#85"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.mdb8604039040#603"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/monotouch.dll.mdb /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/mscorlib.dll mscorlib.dll
-s325541954.886708
-e325541954.952391
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/mscorlib.dll
-xmscorlib.dll
-lSLF07#2@17"Copy mscorlib.dll325541954#325541954#0(0"0(0#0#80"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll8603414304#598"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCpResource build/Debug-iphoneos/TheGym.app/mscorlib.dll.mdb mscorlib.dll.mdb
-s325541954.893061
-e325541954.981297
-r1
-xCpResource
-xbuild/Debug-iphoneos/TheGym.app/mscorlib.dll.mdb
-xmscorlib.dll.mdb
-lSLF07#2@21"Copy mscorlib.dll.mdb325541954#325541954#0(0"0(0#0#84"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.mdb8602767168#602"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/mscorlib.dll.mdb /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app0#
-
-CCreateUniversalBinary /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/TheGym normal "armv6 armv7"
-r0
-
-CGenerateDSYMFile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app.dSYM /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/TheGym
-r0
-
-CLd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv6/TheGym normal armv6
-r0
-
-CLd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/Objects-normal/armv7/TheGym normal armv7
-r0
-
-CProcessInfoPlistFile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/Info.plist Info.plist
-s325541953.540293
-e325541953.561488
-r1
-xProcessInfoPlistFile
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/Info.plist
-xInfo.plist
-lSLF07#2@18"Process Info.plist325541953#325541953#0(0"0(0#0#78"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/Info.plist8604269184#723"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Info.plist -genpkginfo /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/ResourceRules.plist -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/Info.plist0#
-
-CProcessProductPackaging "/Users/Oddis/Library/MobileDevice/Provisioning Profiles/949EA698-302F-49AD-96AF-D70E14D33C00.mobileprovision" /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/embedded.mobileprovision
-s325541955.518875
-e325541955.520496
-r1
-xProcessProductPackaging
-x/Users/Oddis/Library/MobileDevice/Provisioning Profiles/949EA698-302F-49AD-96AF-D70E14D33C00.mobileprovision
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/embedded.mobileprovision
-lSLF07#2@191"ProcessProductPackaging "/Users/Oddis/Library/MobileDevice/Provisioning Profiles/949EA698-302F-49AD-96AF-D70E14D33C00.mobileprovision" build/Debug-iphoneos/TheGym.app/embedded.mobileprovision325541955#325541955#0(0"0(0#0#124"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/embedded.mobileprovision8604146496#536"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/Oddis/Library/MobileDevice/Provisioning Profiles/949EA698-302F-49AD-96AF-D70E14D33C00.mobileprovision" -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym.xcent
-s325541955.520589
-e325541955.522379
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-x/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym.xcent
-lSLF07#2@172"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym.xcent325541955#325541955#0(0"0(0#0#127"/Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym.xcent8603789088#543"    cd /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/TheGym.build/Debug-iphoneos/TheGym.build/TheGym.xcent0#
-
-CTouch /Users/Oddis/Projects/TheGym/TheGym/bin/iPhone/Release/XcodeProject/build/Debug-iphoneos/TheGym.app
-r0
-

@@ -44,6 +44,9 @@ namespace TheGym
 				alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
 				alert.AddButton("OK");
 				alert.Show();	
+				tabBarController.arrangeTabBars();
+				tabBarController.SelectedIndex = 8;
+
 			}
 			else tabBarController.arrangeTabBars();
 			

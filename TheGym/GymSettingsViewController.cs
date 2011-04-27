@@ -58,8 +58,14 @@ namespace TheGym
 			userNameField = new UITextField( new RectangleF(xPos,yPos,fieldWidth,gridHight) );
 			userNameField.BorderStyle = UITextBorderStyle.RoundedRect;
 			userNameField.AutocorrectionType = UITextAutocorrectionType.No;
+			userNameField.KeyboardType = UIKeyboardType.EmailAddress;
+			userNameField.AutocapitalizationType = UITextAutocapitalizationType.None;
 			userNameField.Placeholder = "Brukernavn";		
 			userNameField.Text = GymSettingsDataSource.UserName;
+			userNameField.ShouldReturn = delegate ( UITextField textField ) {
+				 return textField.ResignFirstResponder();
+			};
+			
 			View.Add( userNameField );
 			
 			yPos += spacing + gridHight;
@@ -70,6 +76,12 @@ namespace TheGym
 			passwordField.SecureTextEntry = true;
 			passwordField.Placeholder = "Passord";
 			passwordField.Text = GymSettingsDataSource.Password;
+			passwordField.ShouldReturn = delegate ( UITextField textField ) {
+				 return textField.ResignFirstResponder();
+			};
+
+		
+			
 			View.Add( passwordField );
 			
 			yPos += spacing + gridHight;
@@ -104,7 +116,6 @@ namespace TheGym
 				UIAlertView alert = new UIAlertView();
 				alert.Title = "Påloggingsfeil";
 				alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
-				//System.Console.WriteLine( TTTHttp.ErrorMessage );
 				alert.AddButton("OK");
 				alert.Show();
 			}

@@ -9,8 +9,11 @@ namespace TheGym
 		public static void initialize ()
 		{
 			texts = new Dictionary<string, string>();
+			texts.Add( "Felaktigt aanvändarnamn", "Brukernavnet finnes ikke" );
 			texts.Add( "Felaktigt anv&#xE4;ndarnamn", "Brukernavnet finnes ikke" );
 			texts.Add( "Felaktigt l&#xF6;senord", "Passordet stemmer ikke" );
+			texts.Add( "Felaktigt lösenord", "Passordet stemmer ikke" );
+			texts.Add( "Felaktigt användarnamn eller lösenord", "Feil brukernavn eller passord" );
 			
 		}
 		

@@ -100,7 +100,7 @@ namespace TheGym
 				}
 	
 				StreamReader reader = new StreamReader( loginResponse.GetResponseStream());
-				string response = reader.ReadToEnd();
+				string response = HtmlEntity.DeEntitize( reader.ReadToEnd() );
 				
 				loginResponse.Close();
 				reader.Close();
@@ -137,10 +137,10 @@ namespace TheGym
 			StreamReader responseReader = new StreamReader( webRequest.GetResponse().GetResponseStream() , Encoding.UTF7 );
    
 			// and read the response
-			string responseData = responseReader.ReadToEnd();
+			string responseData = HtmlEntity.DeEntitize( responseReader.ReadToEnd() );
 			responseReader.Close();		
 			
-			return HtmlEntity.DeEntitize( responseData );
+			return  responseData ;
 		}
 		
 		public static string getHTTP ( string url )
@@ -155,12 +155,12 @@ namespace TheGym
    			StreamReader responseReader = new StreamReader( webRequest.GetResponse().GetResponseStream() , Encoding.UTF7 );
    
 			// and read the response
-			string responseData = responseReader.ReadToEnd();
+			string responseData = HtmlEntity.DeEntitize( responseReader.ReadToEnd());
 			responseReader.Close();
 			
 			findErrors( responseData );
 			
-			return HtmlEntity.DeEntitize( responseData );
+			return responseData ;
 		}
 		
 		

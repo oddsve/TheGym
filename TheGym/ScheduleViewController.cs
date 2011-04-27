@@ -59,7 +59,7 @@ namespace TheGym
 		
 		public override void ViewDidAppear (bool animated)
 		{
-			
+			scheduleTableViewController.View.RemoveFromSuperview();
 			View.AddSubview( activityIndicator );
 			activityIndicator.StartAnimating();
 			ThreadStart workerTread = new ThreadStart(populateView);

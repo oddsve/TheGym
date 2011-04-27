@@ -12,6 +12,7 @@ namespace TheGym
 		public static string Password { get ; set; }
 		public static List<string> selectedGymKeys { get; set; }
 		public static bool isLogedOn { get; set; }
+		public static string gymKeyString { get; set; }
 		private static string gymKeys;
 		
 		public static void Read ()
@@ -61,14 +62,14 @@ namespace TheGym
 			} 
 			else
 			{
-				string keys = "";
+				gymKeyString = "";
 				
 				for (int i = 0; i< selectedGymKeys.Count; i++ )
 				{
-					keys += ","+selectedGymKeys[ i ];
+					gymKeyString += ","+selectedGymKeys[ i ];
 				}
-				keys = keys.Substring(1);
-				NSUserDefaults.StandardUserDefaults.SetString( keys, "gymKeys" );
+				gymKeyString = gymKeyString.Substring(1);
+				NSUserDefaults.StandardUserDefaults.SetString( gymKeyString , "gymKeys" );
 			}
 			
 			NSUserDefaults.StandardUserDefaults.Synchronize();
