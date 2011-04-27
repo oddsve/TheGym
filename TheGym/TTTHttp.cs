@@ -156,8 +156,8 @@ namespace TheGym
    
 			// and read the response
 			string responseData = responseReader.ReadToEnd();
-			
 			responseReader.Close();
+			
 			findErrors( responseData );
 			
 			return responseData;

@@ -50,6 +50,11 @@ namespace TheGym
 			
 		}
 		
+		public GymClass getGymClass( NSIndexPath indexPath)
+		{
+			return _gyms[ indexPath.Row ];
+		}
+		
 		//Overrided methods
 		public override int RowsInSection (UITableView tableView, int section )
 		{

@@ -10,12 +10,14 @@ namespace TheGym
 		UIButton bookButton;
 		GymClass gymClass;		
 		UITableView tableView;
+		NSIndexPath indexPath;
 		
-		public BookingViewController ( GymClass gymClass, UITableView tableView ) 
+		public BookingViewController ( GymClass gymClass, UITableView tableView, NSIndexPath indexPath ) 
 		{
 			Title = gymClass.title;
 			this. gymClass = gymClass;	
 			this.tableView = tableView;
+			this.indexPath = indexPath;
 			
 		}
 		
@@ -32,7 +34,7 @@ namespace TheGym
 			else if ( gymClass.booked ) 
 			{
 				bookButton.SetTitle("Avbestill",UIControlState.Normal );
-				bookButton.SetTitle("Avbestiller",UIControlState.Highlighted );
+				bookButton.SetTitle("Sender avbestilling",UIControlState.Highlighted );
 				bookButton.Enabled = true;
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/redbutton.png" ), UIControlState.Normal );
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Highlighted );
@@ -46,7 +48,7 @@ namespace TheGym
 			else 
 			{
 				bookButton.SetTitle("Bestill",UIControlState.Normal );
-				bookButton.SetTitle("Bestiller",UIControlState.Highlighted );
+				bookButton.SetTitle("Sender bestilling",UIControlState.Highlighted );
 				bookButton.Enabled = true;	
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greenbutton.png" ), UIControlState.Normal );				
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Highlighted );
@@ -68,7 +70,10 @@ namespace TheGym
 			bookButton.TouchUpInside += delegate {
 				gymClass.book();
 				tableView.ReloadData();
-				NavigationController.PopViewControllerAnimated( true );
+				ScheduleTableViewDataSource ds = ( ScheduleTableViewDataSource ) tableView.DataSource;
+				gymClass = ds.getGymClass( indexPath );
+				setButton();
+				//NavigationController.PopViewControllerAnimated( true );
 			
 			};
 
