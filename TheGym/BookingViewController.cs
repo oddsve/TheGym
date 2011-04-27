@@ -31,7 +31,7 @@ namespace TheGym
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
 				
 			}
-			else if ( gymClass.bookAction == null )
+			else if ( gymClass.bookAction == null && gymClass.unbookAction == null )
 			{
 				if ( gymClass.booked )
 					bookButton.SetTitle("Kan ikke avbestilles",UIControlState.Normal );

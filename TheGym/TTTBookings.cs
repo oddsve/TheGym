@@ -66,7 +66,7 @@ namespace TheGym
 								gymClass.instructor = cell.InnerText.Trim();
 															
 								cell = cells[4];
-								if ( cell.SelectNodes( "//a") != null )
+								if ( cell.InnerText.Trim() == "Avbooke" )
 								{
 									link = cell.SelectNodes( "//a" )[0];
 									string href = link.GetAttributeValue( "href" , "" );
