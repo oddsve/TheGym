@@ -15,8 +15,11 @@ namespace TheGym
 
 			HtmlDocument document = new HtmlDocument();
 			HtmlNode.ElementsFlags.Remove( "option" );
-			document.LoadHtml( TTTHttp.getHTTP( "http://brp.netono.se/3t/mesh/showBookings.action" ) );
-		
+			string html = TTTHttp.getHTTP("http://brp.netono.se/3t/mesh/showBookings.action"  );
+			
+			document.LoadHtml( html  );
+			
+			
 			
 			HtmlDocument rowDocument= new HtmlDocument();
 									
@@ -63,27 +66,24 @@ namespace TheGym
 								gymClass.instructor = cell.InnerText.Trim();
 															
 								cell = cells[4];
-								link = cell.SelectNodes( "//a" )[0];
-								
-								string href = link.GetAttributeValue( "href" , "" );
-								
-								string pattern = "bookingId=(.*?)'";
-								// Instantiate the regular expression object.
-								Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
-								
-								// Match the regular expression pattern against a text string.
-								Match m = r.Match(href);
-								while (m.Success) 
+								if ( cell.SelectNodes( "//a") != null )
 								{
+									link = cell.SelectNodes( "//a" )[0];
+									string href = link.GetAttributeValue( "href" , "" );
+								
+									string pattern = "bookingId=(.*?)'";
+									// Instantiate the regular expression object.
+									Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
 									
-									gymClass.unbookAction = "debook.action?bookingId=" + m.Groups[1].ToString() ;
-								 	m = m.NextMatch();
-									
-								}
-								
-								gymClass.status = "Booket";
-								
-								
+									// Match the regular expression pattern against a text string.
+									Match m = r.Match(href);
+									while (m.Success) 
+									{
+										gymClass.unbookAction = "debook.action?bookingId=" + m.Groups[1].ToString() ;
+									 	m = m.NextMatch();										
+									}
+								}		
+								gymClass.status = "Booket";								
 								myBookings.Add( gymClass );				
 							}
 						}

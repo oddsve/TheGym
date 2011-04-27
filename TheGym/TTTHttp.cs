@@ -140,7 +140,7 @@ namespace TheGym
 			string responseData = responseReader.ReadToEnd();
 			responseReader.Close();		
 			
-			return responseData;				
+			return HtmlEntity.DeEntitize( responseData );
 		}
 		
 		public static string getHTTP ( string url )
@@ -160,7 +160,7 @@ namespace TheGym
 			
 			findErrors( responseData );
 			
-			return responseData;
+			return HtmlEntity.DeEntitize( responseData );
 		}
 		
 		

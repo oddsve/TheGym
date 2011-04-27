@@ -31,6 +31,15 @@ namespace TheGym
 				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
 				
 			}
+			else if ( gymClass.bookAction == null )
+			{
+				if ( gymClass.booked )
+					bookButton.SetTitle("Kan ikke avbestilles",UIControlState.Normal );
+				else
+					bookButton.SetTitle("Kan ikke bestilles",UIControlState.Normal );
+				bookButton.Enabled = false;	
+				bookButton.SetBackgroundImage( UIImage.FromFile ("images/greybutton.png" ), UIControlState.Normal );
+			}
 			else if ( gymClass.booked ) 
 			{
 				bookButton.SetTitle("Avbestill",UIControlState.Normal );
@@ -58,12 +67,10 @@ namespace TheGym
 		public override void ViewDidLoad ()
 		{
 			
-			View.BackgroundColor = UIColor.Black;
-			
+			View.BackgroundColor = UIColor.Black;		
 			bookButton = new UIButton( new RectangleF(10,100,this.View.Frame.Width-10 ,40) );
 			
 			
-			//bookButton.Frame = ( new RectangleF(10,100,this.View.Frame.Width-10 ,40) );
 			bookButton.BackgroundColor = UIColor.Clear;
 			setButton();
 			
@@ -73,7 +80,6 @@ namespace TheGym
 				ScheduleTableViewDataSource ds = ( ScheduleTableViewDataSource ) tableView.DataSource;
 				gymClass = ds.getGymClass( indexPath );
 				setButton();
-				//NavigationController.PopViewControllerAnimated( true );
 			
 			};
 
