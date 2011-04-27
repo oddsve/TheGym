@@ -29,15 +29,6 @@ namespace TheGym
 			
 		}
 		
-		public override void ViewDidAppear (bool animated)
-		{
-			base.ViewDidAppear (animated);
-		}
-		
-		public override void ViewWillAppear (bool animated)
-		{
-			base.ViewWillAppear (animated);
-		}
 		
 	}
 }
