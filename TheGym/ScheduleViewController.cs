@@ -40,7 +40,7 @@ namespace TheGym
 			scheduleTableViewController = 
 				new ScheduleTableViewController( this.NavigationController, _scheduleDate , _myBookings );
 			
-			scheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height );
+			scheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height - 90 );
 			
 			
 			activityIndicator = new UIActivityIndicatorView();
@@ -49,7 +49,6 @@ namespace TheGym
 			float sides = View.Frame.Width - 200;
 			float ypos = (View.Frame.Height-View.Frame.Width)/2;
 			activityIndicator.Frame = new RectangleF( 100, ypos, sides, sides );
-			//activityIndicator.Center = View.Center ;
 			activityIndicator.BackgroundColor = UIColor.Black;
 			
 			
