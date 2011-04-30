@@ -18,6 +18,8 @@ namespace TheGym
 	public partial class AppDelegate : UIApplicationDelegate
 	{
 		private GymTabBarController tabBarController;
+		private GymNavigationViewController gymNavigationController;
+		private UINavigationController navigationController;
 		
 		
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
@@ -25,7 +27,38 @@ namespace TheGym
 			
 			GymSettingsDataSource.Read();
 			Text.initialize();
-			tabBarController = new GymTabBarController();
+			
+			gymNavigationController = new GymNavigationViewController();
+			gymNavigationController.View.Frame = new System.Drawing.RectangleF (0, 20, window.Frame.Width, window.Frame.Height - 50);
+			
+			navigationController = new UINavigationController( gymNavigationController );
+			window.AddSubview ( navigationController.View );
+			
+			window.MakeKeyAndVisible();
+			
+			if ( GymSettingsDataSource.UserName == null || GymSettingsDataSource.Password == null )
+			{
+		//		tabBarController.arrangeTabBars();
+		//		tabBarController.SelectedIndex = 8;
+			}
+			else TTTHttp.LogOn() ;
+			
+			if ( TTTHttp.isError ) 
+			{
+				UIAlertView alert = new UIAlertView();
+				alert.Title = "Påloggingsfeil";
+				alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
+				alert.AddButton("OK");
+				alert.Show();	
+	//			tabBarController.arrangeTabBars();
+	//			tabBarController.SelectedIndex = 8;
+
+			}
+	//		else tabBarController.arrangeTabBars();
+			
+			return true;
+			
+		/*	tabBarController = new GymTabBarController();
 			window.AddSubview ( tabBarController.View );		
 			
 			window.MakeKeyAndVisible ();
@@ -50,12 +83,12 @@ namespace TheGym
 			}
 			else tabBarController.arrangeTabBars();
 			
-			return true;
+			return true;*/
 		}
 		
 		public override void WillEnterForeground (UIApplication application)
 		{
-			if ( !GymSettingsDataSource.isLogedOn ) 
+	/*		if ( !GymSettingsDataSource.isLogedOn ) 
 			{
 				TTTHttp.LogOn();
 			
@@ -69,7 +102,7 @@ namespace TheGym
 				}
 			}
 				
-			if ( GymSettingsDataSource.isLogedOn )	tabBarController.arrangeTabBars();
+			if ( GymSettingsDataSource.isLogedOn )	tabBarController.arrangeTabBars(); */
 		}
 
 		public override void OnActivated (UIApplication application)

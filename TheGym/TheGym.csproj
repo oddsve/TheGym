@@ -110,6 +110,8 @@
     <Compile Include="GymsTableViewDataSource.cs" />
     <Compile Include="TTTBook.cs" />
     <Compile Include="Text.cs" />
+    <Compile Include="GymNavigationViewController.cs" />
+    <Compile Include="ScheduleButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xib" />
@@ -124,14 +126,22 @@
     <None Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\greybutton.png" />
-    <Content Include="images\greenbutton.png" />
-    <Content Include="images\redbutton.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\HtmlAgilityPack.1.4.0.Source\HtmlAgilityPack\HtmlAgilityPack.csproj">
       <Project>{193BB801-054F-4729-9D5D-FCE1E32594BF}</Project>
       <Name>HtmlAgilityPack</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\grad4.png" />
+    <Content Include="images\green.png" />
+    <Content Include="images\greenbutton.png" />
+    <Content Include="images\greybutton.png" />
+    <Content Include="images\redbutton.png" />
+    <Content Include="images\grey.png" />
+    <Content Include="images\red.png" />
+    <Content Include="images\violet.png" />
   </ItemGroup>
 </Project>

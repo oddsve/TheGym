@@ -44,15 +44,11 @@ namespace TheGym
 			
 			
 			activityIndicator = new UIActivityIndicatorView();
-			activityIndicator.ActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge;
-			
-			float sides = View.Frame.Width - 200;
-			float ypos = (View.Frame.Height-View.Frame.Width)/2;
-			activityIndicator.Frame = new RectangleF( 100, ypos, sides, sides );
+			activityIndicator.ActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.White;
+			activityIndicator.Frame =  new RectangleF( 0,0,50,50);
+			activityIndicator.Center = new PointF( View.Frame.Width/2,View.Frame.Height/3);
 			activityIndicator.BackgroundColor = UIColor.Black;
-			
-			
-			
+
 			
 		}
 		

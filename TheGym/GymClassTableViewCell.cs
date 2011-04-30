@@ -48,14 +48,14 @@ namespace TheGym
 			
 			UIView backGround = new UIView( new RectangleF( 0,0,Frame.Width ,Frame.Height ) );	
 			UIColor textColor = UIColor.White;
-			backGround.BackgroundColor = UIColor.Black;
+			backGround.BackgroundColor = UIColor.FromPatternImage( UIImage.FromFile ("images/violet.png") );
 			
 			if ( _gymClass.fullt )
 			{
-				backGround.BackgroundColor = UIColor.Gray;
+				backGround.BackgroundColor = UIColor.FromPatternImage( UIImage.FromFile ("images/grey.png") );
 			} else if ( _gymClass.booked )
 			{
-				backGround.BackgroundColor = UIColor.Green;
+				backGround.BackgroundColor = UIColor.FromPatternImage( UIImage.FromFile ("images/green.png") );
 				textColor = UIColor.Black;
 			} 		
 
