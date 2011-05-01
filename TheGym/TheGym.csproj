@@ -143,5 +143,6 @@
     <Content Include="images\grey.png" />
     <Content Include="images\red.png" />
     <Content Include="images\violet.png" />
+    <Content Include="images\blue.png" />
   </ItemGroup>
 </Project>

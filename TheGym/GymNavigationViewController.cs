@@ -7,7 +7,9 @@ namespace TheGym
 {
 	public class GymNavigationViewController : UIViewController
 	{
-		List<UIButton> elements = new List<UIButton>();
+		List<UIButton> elements ;
+		UIButton settingsButton ;
+
 		public GymNavigationViewController ()
 		{
 			
@@ -18,6 +20,15 @@ namespace TheGym
 			View.BackgroundColor = UIColor.Black;
 			Title = "TheGym";
 			
+			
+			arrangeMenu();
+		}
+		
+		
+		public void arrangeMenu()
+		{
+			elements = new List<UIButton>();
+					
 			for ( int i = 0 ;i< 7 ; i++)
 			{
 				ScheduleButton element = new ScheduleButton( DateTime.Now.AddDays( i ) );		
@@ -42,36 +53,59 @@ namespace TheGym
 			
 			
 			
-			UIButton settings = new UIButton();
-			settings.SetBackgroundImage(  UIImage.FromFile ("images/grey.png"), UIControlState.Normal );
-			settings.SetTitle( "innstillinger",UIControlState.Normal);
-			settings.TouchUpInside += delegate(object sender, EventArgs e) {
+			settingsButton = new UIButton();
+			settingsButton.SetBackgroundImage(  UIImage.FromFile ("images/grey.png"), UIControlState.Normal );
+			settingsButton.SetBackgroundImage(  UIImage.FromFile ("images/blue.png"), UIControlState.Highlighted );
+			
+			settingsButton.SetTitle( "innstillinger",UIControlState.Normal);
+			settingsButton.TouchUpInside += delegate(object sender, EventArgs e) {
 				this.NavigationController.PushViewController( new GymSettingsViewController(),true );
 			};
 			
-			elements.Add( settings );
+			elements.Add ( settingsButton );
+
 			
 		}
 		
 		public override void ViewDidAppear (bool animated)
 		{
+			
+			NavigationController.NavigationBar.BackgroundColor = UIColor.FromPatternImage( UIImage.FromFile ("images/blue.png") );
 			float border = 0;
-			float gridHight = ( View.Frame.Height-border) / 9;
+			float gridHight = ( View.Frame.Height-border) / elements.Count;
 			float gridWidh = View.Frame.Width ;
 			float ypos = 0;
 			float xpos = 0;
 			
-
-			for ( int i = 0; i < 9 ; i ++ )
+			for ( int i = 0; i < elements.Count ; i ++ )
 			{
+				
 				elements[i].Frame = new RectangleF(xpos+border,ypos+border,gridWidh-2*border , gridHight-border  );
 				View.AddSubview (elements[i]);
 			
 				ypos += gridHight;
 			
 			}
-	
-		
+				
+			
+			if ( GymSettingsDataSource.UserName == null || GymSettingsDataSource.Password == null )
+			{
+				
+				NavigationController.PushViewController( new GymSettingsViewController(), true );
+			}
+			else TTTHttp.LogOn() ;
+			
+			if ( TTTHttp.isError ) 
+			{
+				UIAlertView alert = new UIAlertView();
+				alert.Title = "Påloggingsfeil";
+				alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
+				alert.AddButton("OK");
+				alert.Show();	
+				NavigationController.PushViewController( new GymSettingsViewController(), true );
+
+			}
+
 		}
 	}
 }

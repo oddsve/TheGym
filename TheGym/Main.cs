@@ -36,25 +36,6 @@ namespace TheGym
 			
 			window.MakeKeyAndVisible();
 			
-			if ( GymSettingsDataSource.UserName == null || GymSettingsDataSource.Password == null )
-			{
-		//		tabBarController.arrangeTabBars();
-		//		tabBarController.SelectedIndex = 8;
-			}
-			else TTTHttp.LogOn() ;
-			
-			if ( TTTHttp.isError ) 
-			{
-				UIAlertView alert = new UIAlertView();
-				alert.Title = "Påloggingsfeil";
-				alert.Message = Text.getString( TTTHttp.ErrorMessage ) ;
-				alert.AddButton("OK");
-				alert.Show();	
-	//			tabBarController.arrangeTabBars();
-	//			tabBarController.SelectedIndex = 8;
-
-			}
-	//		else tabBarController.arrangeTabBars();
 			
 			return true;
 			
@@ -88,6 +69,7 @@ namespace TheGym
 		
 		public override void WillEnterForeground (UIApplication application)
 		{
+			gymNavigationController.arrangeMenu();
 	/*		if ( !GymSettingsDataSource.isLogedOn ) 
 			{
 				TTTHttp.LogOn();

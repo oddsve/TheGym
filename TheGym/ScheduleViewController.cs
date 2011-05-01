@@ -40,12 +40,12 @@ namespace TheGym
 			scheduleTableViewController = 
 				new ScheduleTableViewController( this.NavigationController, _scheduleDate , _myBookings );
 			
-			scheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height - 90 );
+			scheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height-45  );
 			
 			
 			activityIndicator = new UIActivityIndicatorView();
 			activityIndicator.ActivityIndicatorViewStyle = UIActivityIndicatorViewStyle.White;
-			activityIndicator.Frame =  new RectangleF( 0,0,50,50);
+			activityIndicator.Frame =  new RectangleF( 0,0,40,40);
 			activityIndicator.Center = new PointF( View.Frame.Width/2,View.Frame.Height/3);
 			activityIndicator.BackgroundColor = UIColor.Black;
 

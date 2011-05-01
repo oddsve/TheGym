@@ -17,6 +17,7 @@ namespace TheGym
 			SetTitle(scheduleDate.ToString("dddd", no), UIControlState.Normal );
 			scheduleViewController = new ScheduleViewController( scheduleDate, false );
 			SetBackgroundImage( UIImage.FromFile ("images/violet.png" ), UIControlState.Normal );
+			SetBackgroundImage( UIImage.FromFile ("images/blue.png" ), UIControlState.Highlighted );
 			initiate();
 		}
 		
@@ -26,6 +27,7 @@ namespace TheGym
 			SetTitle( title, UIControlState.Normal );
 			scheduleViewController = new ScheduleViewController( scheduleDate,true );
 			SetBackgroundImage( UIImage.FromFile ("images/green.png" ), UIControlState.Normal );
+			SetBackgroundImage( UIImage.FromFile ("images/blue.png" ), UIControlState.Highlighted );
 			initiate();
 		}
 		
