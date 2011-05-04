@@ -5,11 +5,16 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>English</string>
     <key>CFBundleDisplayName</key>
-    <string>TheGym</string>
+    <string>3T</string>
     <key>CFBundleExecutable</key>
     <string>NavigationControllerSample</string>
+    <key>CFBundleIconFile</key>
+    <string>label.png</string>
     <key>CFBundleIconFiles</key>
-    <array />
+    <array>
+      <string>images/label.png</string>
+      <string>images/lablehd.png</string>
+    </array>
     <key>CFBundleIdentifier</key>
     <string>com.yourcompany.thegym</string>
     <key>CFBundleInfoDictionaryVersion</key>

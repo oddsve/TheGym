@@ -126,14 +126,14 @@ namespace TheGym
 								}
 							}
 							
-							
-							schedules.Add( gymClass );				
+							if ( gymClass.fullt || gymClass.bookAction != null ) schedules.Add( gymClass );				
 						}
 					}
 				}
 				 
 			}		
 			
+
 			return schedules;
 		}	
 		 

@@ -17,7 +17,7 @@ namespace TheGym
 
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		private GymTabBarController tabBarController;
+	//	private GymTabBarController tabBarController;
 		private GymNavigationViewController gymNavigationController;
 		private UINavigationController navigationController;
 		

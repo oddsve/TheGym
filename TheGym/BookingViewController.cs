@@ -79,7 +79,7 @@ namespace TheGym
 				tableView.ReloadData();
 				
 				ScheduleTableViewDataSource ds = ( ScheduleTableViewDataSource ) tableView.DataSource;
-				ds.ReloadData(true);
+				ds.force = true;
 				gymClass = ds.getGymClass( indexPath );
 				setButton();
 			

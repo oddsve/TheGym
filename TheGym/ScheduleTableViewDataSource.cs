@@ -15,6 +15,8 @@ namespace TheGym
 		private DateTime reloadTimeStamp;
 		private string gymKeys;
 		
+		public bool force {get; set; }
+		
 		
 		public List<GymClass> Gyms
 		{
@@ -30,9 +32,15 @@ namespace TheGym
 			this.scheduleDate = scheduleDate;
 					
 		}
-		 
 		
-		public void ReloadData ( bool forse )
+		public bool needToReload()
+		{
+			return ( force 
+				     || gymKeys != GymSettingsDataSource.gymKeyString 
+				     || reloadTimeStamp.AddMinutes(1) < DateTime.Now );
+		}
+		
+		public void ReloadData ( )
 		{
 			if ( myBookings ) 
 			{
@@ -48,13 +56,12 @@ namespace TheGym
 				}
 			}
 			else 
-				if ( forse 
-				    || gymKeys != GymSettingsDataSource.gymKeyString 
-				    || reloadTimeStamp.AddMinutes(1) < DateTime.Now )
+				if ( needToReload() )
 				{
 					gymKeys = GymSettingsDataSource.gymKeyString;
 					this._gyms = TTTSchedules.getSchedules( scheduleDate );
 					reloadTimeStamp = DateTime.Now;
+					force= false;
 				}
 			
 		}

@@ -18,7 +18,7 @@ namespace TheGym
 		public override void ViewDidLoad ()
 		{
 			View.BackgroundColor = UIColor.Black;
-			Title = "TheGym";
+			Title = "Velg dag";
 			
 			
 			arrangeMenu();

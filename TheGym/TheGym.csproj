@@ -12,6 +12,9 @@
     <MainNibFile>MainWindow.nib</MainNibFile>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <MtouchMinimumOS>3.0</MtouchMinimumOS>
+    <BundleDisplayName>3T</BundleDisplayName>
+    <BundleIcon>images\label.png</BundleIcon>
+    <BundleIconHigh>images\lablehd.png</BundleIconHigh>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,12 +41,13 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>False</MtouchDebug>
-    <MtouchSdkVersion>3.0</MtouchSdkVersion>
+    <MtouchSdkVersion>4.2</MtouchSdkVersion>
     <MtouchUseLlvm>false</MtouchUseLlvm>
     <MtouchArch>ARMv6</MtouchArch>
     <MtouchUseThumb>false</MtouchUseThumb>
     <MtouchUseSGen>false</MtouchUseSGen>
     <AssemblyName>NavigationControllerSample</AssemblyName>
+    <MtouchI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -144,5 +148,7 @@
     <Content Include="images\red.png" />
     <Content Include="images\violet.png" />
     <Content Include="images\blue.png" />
+    <Content Include="images\label.png" />
+    <Content Include="images\lablehd.png" />
   </ItemGroup>
 </Project>

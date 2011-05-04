@@ -54,20 +54,25 @@ namespace TheGym
 		
 		public override void ViewDidAppear (bool animated)
 		{
-			scheduleTableViewController.View.RemoveFromSuperview();
-			View.AddSubview( activityIndicator );
-			activityIndicator.StartAnimating();
-			ThreadStart workerTread = new ThreadStart(populateView);
-			new Thread ( workerTread ).Start();			
+			ScheduleTableViewDataSource dataSource = (ScheduleTableViewDataSource) scheduleTableViewController.TableView.DataSource;
+			if ( dataSource.needToReload() ) 
+			{
+				scheduleTableViewController.View.RemoveFromSuperview();
+				View.AddSubview( activityIndicator );
+				activityIndicator.StartAnimating();
+				ThreadStart workerTread = new ThreadStart(populateView);
+				new Thread ( workerTread ).Start();			
+			}
 		}
 		
 		public void populateView ()
 		{
 			ScheduleTableViewDataSource dataSource = (ScheduleTableViewDataSource) scheduleTableViewController.TableView.DataSource;
-			dataSource.ReloadData(false);
+			dataSource.ReloadData();
 			scheduleTableViewController.TableView.ReloadData();
 			activityIndicator.RemoveFromSuperview();
 			View.AddSubview ( scheduleTableViewController.View );
+			
 		}
 		
 	}

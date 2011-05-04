@@ -6,7 +6,15 @@
 	<dict>
 		<key>HtmlAgilityPack.dll</key>
 		<data>
-		3y4kWg3mcD+cDDg7gEsek6DTkqo=
+		3gTY+8KeGz9/W4K1q3k/TjV5yKM=
+		</data>
+		<key>Icon.png</key>
+		<data>
+		ONMZdtmMW0HXDmPxxbw6iPljPCM=
+		</data>
+		<key>Icon@2x.png</key>
+		<data>
+		3CUGqJCp6L1CJ2bLq4C1n7kw4yM=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
@@ -14,7 +22,7 @@
 		</data>
 		<key>Mono.Security.dll</key>
 		<data>
-		BZEe1kH+6IfGI6LaPOQxYc/WuIo=
+		zgVrQ+FSIVN1eqQzLTk9dSYmDZM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -22,23 +30,27 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		jntiNNNt80HI5z1NqRlAWR0kfDE=
+		Z0COTysRi5R+sgb2rEJ5qPROD7Q=
 		</data>
 		<key>System.Xml.dll</key>
 		<data>
-		s4x97UFuVvkEQW0cZ3XO+PMACCs=
+		snkhztlwmWnfm+aIy7qDaTL79Po=
 		</data>
 		<key>System.dll</key>
 		<data>
-		EUtXBqVj7PWr+lmGJpnNw7vrF1o=
+		HWe/5VadIvxJPi3dcieq/uaU/ko=
 		</data>
 		<key>TheGym.exe</key>
 		<data>
-		vnpMXBR9vl4PdFgciHYE1OWUevI=
+		FpXnTWbDKIBtp0CWLh+pQJYsDoI=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		rMXIwo9ANYS+BauTtelPnoPfZwo=
+		</data>
+		<key>images/blue.png</key>
+		<data>
+		IffkU5gL74l7BAAX5GxN4Po1258=
 		</data>
 		<key>images/grad4.png</key>
 		<data>
@@ -60,6 +72,14 @@
 		<data>
 		HD+z5lYpv0MmJNrDp/W6tNXr6RI=
 		</data>
+		<key>images/label.png</key>
+		<data>
+		ONMZdtmMW0HXDmPxxbw6iPljPCM=
+		</data>
+		<key>images/lablehd.png</key>
+		<data>
+		3CUGqJCp6L1CJ2bLq4C1n7kw4yM=
+		</data>
 		<key>images/red.png</key>
 		<data>
 		D4b0zA2tp/CyPAaNMO0jyES/oA8=
@@ -74,11 +94,11 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		BfU4GMvmZREcvtNt8F4z9yD3CBw=
+		0U2OdA6szVZIkZTE5RYCle9aTsI=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		33MBoaek6ohWzR18ZIcFlGWAv8c=
+		K091yvL5EjTSEUWrzgQTYnapWTU=
 		</data>
 	</dict>
 	<key>rules</key>
