@@ -11,7 +11,7 @@ namespace TheGym
 		protected List<GymClass> _gyms;
 		
 		private DateTime scheduleDate;
-		private bool myBookings;
+		public bool isMyBookings{ get; set; }
 		private DateTime reloadTimeStamp;
 		private string gymKeys;
 		
@@ -28,7 +28,7 @@ namespace TheGym
 		
 		public ScheduleTableViewDataSource ( DateTime scheduleDate, bool myBookings  )
 		{
-			this.myBookings = myBookings;
+			this.isMyBookings = myBookings;
 			this.scheduleDate = scheduleDate;
 					
 		}
@@ -42,7 +42,7 @@ namespace TheGym
 		
 		public void ReloadData ( )
 		{
-			if ( myBookings ) 
+			if ( isMyBookings ) 
 			{
 				if ( !GymSettingsDataSource.isLogedOn ) 
 				{

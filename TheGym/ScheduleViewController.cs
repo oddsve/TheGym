@@ -40,6 +40,7 @@ namespace TheGym
 			scheduleTableViewController = 
 				new ScheduleTableViewController( this.NavigationController, _scheduleDate , _myBookings );
 			
+			scheduleTableViewController.View.BackgroundColor = UIColor.Black;
 			scheduleTableViewController.View.Frame = new RectangleF( 0, 0, View.Frame.Width, View.Frame.Height-45  );
 			
 			

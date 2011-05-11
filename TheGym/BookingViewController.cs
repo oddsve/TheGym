@@ -76,10 +76,14 @@ namespace TheGym
 			
 			bookButton.TouchUpInside += delegate {
 				gymClass.book();
-				tableView.ReloadData();
-				
+				System.Console.WriteLine( gymClass.unbookAction);
 				ScheduleTableViewDataSource ds = ( ScheduleTableViewDataSource ) tableView.DataSource;
-				ds.force = true;
+				if ( ! ds.isMyBookings ) 
+				{
+					ds.force = true;
+					ds.ReloadData();
+				}
+				tableView.ReloadData();
 				gymClass = ds.getGymClass( indexPath );
 				setButton();
 			
