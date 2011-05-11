@@ -101,10 +101,8 @@
     <Compile Include="ScheduleTableViewController.cs" />
     <Compile Include="ScheduleTableViewDataSource.cs" />
     <Compile Include="ScheduleTableViewDelegate.cs" />
-    <Compile Include="GymTabBarController.cs" />
     <Compile Include="ScheduleViewController.cs" />
     <Compile Include="TTTHttp.cs" />
-    <Compile Include="GymTabBarControllerDelegate.cs" />
     <Compile Include="BookingViewController.cs" />
     <Compile Include="TTTSchedules.cs" />
     <Compile Include="TTTBookings.cs" />
