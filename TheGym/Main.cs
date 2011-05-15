@@ -31,6 +31,7 @@ namespace TheGym
 			gymNavigationController.View.Frame = new System.Drawing.RectangleF (0, 20, window.Frame.Width, window.Frame.Height - 50);
 			
 			navigationController = new UINavigationController( gymNavigationController );
+			navigationController.NavigationBar.BarStyle = UIBarStyle.Black;
 			window.AddSubview ( navigationController.View );
 			
 			window.MakeKeyAndVisible();

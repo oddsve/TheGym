@@ -28,12 +28,13 @@ namespace TheGym
 		{
 			if ( _myBookings ) 
 			{
-				Title = "mine bestillinger";
+				Title = "Mine bestillinger";
 			}
 			else 
 			{
 				CultureInfo no = new CultureInfo("nn-NO");
-				Title = _scheduleDate.ToString("dddd",no);
+				string dayName = _scheduleDate.ToString("dddd",no);
+				Title = dayName.Substring(0,1).ToUpper() + dayName.Substring(1,dayName.Length-1);
 			}
 			
 			View.BackgroundColor = UIColor.Black;

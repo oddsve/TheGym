@@ -41,7 +41,7 @@ namespace TheGym
 				elements.Add(element);
 			}
 			
-			ScheduleButton booking = new ScheduleButton( "mine bestillinger" );
+			ScheduleButton booking = new ScheduleButton( "Mine bestillinger" );
 			booking.TouchUpInside += delegate(object sender, EventArgs e) 
 			{
 				ScheduleButton btn = ( ScheduleButton ) sender;
@@ -57,7 +57,7 @@ namespace TheGym
 			settingsButton.SetBackgroundImage(  UIImage.FromFile ("images/grey.png"), UIControlState.Normal );
 			settingsButton.SetBackgroundImage(  UIImage.FromFile ("images/blue.png"), UIControlState.Highlighted );
 			
-			settingsButton.SetTitle( "innstillinger",UIControlState.Normal);
+			settingsButton.SetTitle( "Innstillinger",UIControlState.Normal);
 			settingsButton.TouchUpInside += delegate(object sender, EventArgs e) {
 				this.NavigationController.PushViewController( new GymSettingsViewController(),true );
 			};

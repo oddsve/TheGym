@@ -14,7 +14,11 @@ namespace TheGym
 		{
 			this.scheduleDate = scheduleDate;
 			CultureInfo no = new CultureInfo("nn-NO");
-			SetTitle(scheduleDate.ToString("dddd", no), UIControlState.Normal );
+			
+			string dayName = scheduleDate.ToString("dddd",no);
+			SetTitle(dayName.Substring(0,1).ToUpper() + dayName.Substring(1,dayName.Length-1),UIControlState.Normal);
+
+			
 			scheduleViewController = new ScheduleViewController( scheduleDate, false );
 			SetBackgroundImage( UIImage.FromFile ("images/violet.png" ), UIControlState.Normal );
 			SetBackgroundImage( UIImage.FromFile ("images/blue.png" ), UIControlState.Highlighted );
